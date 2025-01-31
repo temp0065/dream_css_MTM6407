@@ -1,0 +1,45 @@
+@use "variables";
+
+.dr-p-0 {
+    padding: 0;
+}
+.dr-p-1 {
+    padding: variables.$padding-xsm;
+}
+.dr-p-2 {
+    padding: variables.$padding-sm;
+}
+.dr-p-3 {
+    padding: variables.$padding-md;
+}
+.dr-p-4 {
+    padding: variables.$padding-lg;
+}
+.dr-p-5 {
+    padding: variables.$padding-xl;
+}
+.dr-p-6 {
+    padding: variables.$padding-xxl;
+}
+
+.dr-px-0 {
+    padding: 0;
+}
+.dr-px-1 {
+    padding: variables.$padding-xsm 0;
+}
+.dr-px-2 {
+    padding: variables.$padding-sm 0;
+}
+.dr-px-3 {
+    padding: variables.$padding-md 0;
+}
+.dr-px-4 {
+    padding: variables.$padding-lg 0;
+}
+.dr-px-5 {
+    padding: variables.$padding-xl 0;
+}
+.dr-px-6 {
+    padding: variables.$padding-xxl 0;
+}
