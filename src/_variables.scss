@@ -15,6 +15,8 @@ $font-lg: 2.25rem;
 $font-xl: 3rem;
 $font-xxl: 3.75rem;
 
+// Heading sizes
+
 // Font Weights
 $font-weight-extra-light: 100;
 $font-weight-light: 200;
@@ -24,9 +26,17 @@ $font-weight-bold: 700;
 $font-weight-extra-bold: 900;
 
 // Paddings
-$padding-xsm: 0.25em;
-$padding-sm: 0.5em;
-$padding-md: 1em;
-$padding-lg: 1.5em;
-$padding-xl: 2em;
-$padding-xxl: 2.5em;
+$padding-xsm: 0.25rem;
+$padding-sm: 0.5rem;
+$padding-md: 1rem;
+$padding-lg: 1.5rem;
+$padding-xl: 2rem;
+$padding-xxl: 2.5rem;
+
+// Margins
+$margin-xsm: 0.25rem;
+$margin-sm: 0.5rem;
+$margin-md: 1rem;
+$margin-lg: 1.5rem;
+$margin-xl: 2rem;
+$margin-xxl: 2.5rem;
