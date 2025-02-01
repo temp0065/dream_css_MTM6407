@@ -91,6 +91,15 @@ meter {
 /***
     End of CSS reset
 ***/
+ul {
+  list-style-type: disc;
+  padding: 1rem;
+}
+
+ol {
+  list-style-type: disc;
+}
+
 body {
   font-family: "Lexend", serif;
 }
@@ -118,6 +127,30 @@ h4 {
 p {
   font-size: 1rem;
   font-weight: 400;
+}
+
+.dr-text-xsm {
+  font-weight: 100;
+}
+
+.dr-text-sm {
+  font-weight: 200;
+}
+
+.dr-text-rg {
+  font-weight: 400;
+}
+
+.dr-text-sb {
+  font-weight: 600;
+}
+
+.dr-text-b {
+  font-weight: 700;
+}
+
+.dr-text-xb {
+  font-weight: 900;
 }
 
 /* Padding all around */

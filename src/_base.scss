@@ -1,4 +1,11 @@
 @use "variables";
 
 // Lists
+ul {
+    list-style-type: disc;
+    padding: variables.$padding-md;
+}
 
+ol {
+    list-style-type: disc;
+}
