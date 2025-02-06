@@ -11,3 +11,36 @@
 .dr-container-fluid {
     max-width: 100%;
 }
+
+// Layout
+.dr-center {
+    margin: 0 auto;
+}
+
+// Flexbox
+.dr-flex {
+    display: flex;
+}
+
+.dr-flex-row {
+    flex-direction: row;
+}
+
+.dr-flex-row-r {
+    flex-direction: row-reverse;
+}
+
+.dr-flex-column {
+    flex-direction: column;
+}
+
+.dr-flex-column-r {
+    flex-direction: column-reverse;
+}
+
+// Gaps
+@each $sizes, $gap in variables.$gaps {
+    .dr-g-#{$sizes} {
+        gap: $gap;
+    }
+}

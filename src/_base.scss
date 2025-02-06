@@ -3,7 +3,8 @@
 // Lists
 ul {
     list-style-type: disc;
-    padding: variables.$padding-md;
+    padding-left: map-get(variables.$padding-sizes, "md");
+    margin: map-get(variables.$margin-sizes, "md");
 }
 
 ol {

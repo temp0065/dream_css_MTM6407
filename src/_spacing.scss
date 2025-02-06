@@ -1,323 +1,99 @@
 @use "variables";
 
 /* Padding all around */
-.dr-p-0 {
-    padding: 0;
-}
-.dr-p-1 {
-    padding: variables.$padding-xsm;
-}
-.dr-p-2 {
-    padding: variables.$padding-sm;
-}
-.dr-p-3 {
-    padding: variables.$padding-md;
-}
-.dr-p-4 {
-    padding: variables.$padding-lg;
-}
-.dr-p-5 {
-    padding: variables.$padding-xl;
-}
-.dr-p-6 {
-    padding: variables.$padding-xxl;
+@each $size, $padding in variables.$padding-sizes {
+    .dr-p-#{$size} {
+        padding: $padding;
+    }
 }
 
 /* Padding on x-axis */
-.dr-px-0 {
-    padding: 0;
-}
-.dr-px-1 {
-    padding: 0 variables.$padding-xsm;
-}
-.dr-px-2 {
-    padding: 0 variables.$padding-sm;
-}
-.dr-px-3 {
-    padding: 0 variables.$padding-md;
-}
-.dr-px-4 {
-    padding: 0 variables.$padding-lg;
-}
-.dr-px-5 {
-    padding: 0 variables.$padding-xl;
-}
-.dr-px-6 {
-    padding: 0 variables.$padding-xxl;
+@each $size, $padding in variables.$padding-sizes {
+    .dr-px-#{$size} {
+        padding: 0 $padding;
+    }
 }
 
 /* Padding on y-axis */
-.dr-py-0 {
-    padding: 0;
-}
-.dr-py-1 {
-    padding: variables.$padding-xsm 0;
-}
-.dr-py-2 {
-    padding: variables.$padding-sm 0;
-}
-.dr-py-3 {
-    padding: variables.$padding-md 0;
-}
-.dr-py-4 {
-    padding: variables.$padding-lg 0;
-}
-.dr-py-5 {
-    padding: variables.$padding-xl 0;
-}
-.dr-py-6 {
-    padding: variables.$padding-xxl 0;
+@each $size, $padding in variables.$padding-sizes {
+    .dr-py-#{$size} {
+        padding: $padding 0;
+    }
 }
 
 /* Padding on left side */
-.dr-pl-0 {
-    padding-left: 0;
-}
-.dr-pl-1 {
-    padding-left: variables.$padding-xsm;
-}
-.dr-pl-2 {
-    padding-left: variables.$padding-sm;
-}
-.dr-pl-3 {
-    padding-left: variables.$padding-md;
-}
-.dr-pl-4 {
-    padding-left: variables.$padding-lg;
-}
-.dr-pl-5 {
-    padding-left: variables.$padding-xl;
-}
-.dr-pl-6 {
-    padding-left: variables.$padding-xxl;
+@each $size, $padding in variables.$padding-sizes {
+    .dr-pl-#{$size} {
+        padding-left: $padding;
+    }
 }
 
 /* Padding on right side */
-.dr-pr-0 {
-    padding-right: 0;
-}
-.dr-pr-1 {
-    padding-right: variables.$padding-xsm;
-}
-.dr-pr-2 {
-    padding-right: variables.$padding-sm;
-}
-.dr-pr-3 {
-    padding-right: variables.$padding-md;
-}
-.dr-pr-4 {
-    padding-right: variables.$padding-lg;
-}
-.dr-pr-5 {
-    padding-right: variables.$padding-xl;
-}
-.dr-pr-6 {
-    padding-right: variables.$padding-xxl;
+@each $size, $padding in variables.$padding-sizes {
+    .dr-pr-#{$size} {
+        padding-right: $padding;
+    }
 }
 
 /* Padding on top */
-.dr-pt-0 {
-    padding-top: 0;
-}
-.dr-pt-1 {
-    padding-top: variables.$padding-xsm;
-}
-.dr-pt-2 {
-    padding-top: variables.$padding-sm;
-}
-.dr-pt-3 {
-    padding-top: variables.$padding-md;
-}
-.dr-pt-4 {
-    padding-top: variables.$padding-lg;
-}
-.dr-pt-5 {
-    padding-top: variables.$padding-xl;
-}
-.dr-pt-6 {
-    padding-top: variables.$padding-xxl;
+@each $size, $padding in variables.$padding-sizes {
+    .dr-pt-#{$size} {
+        padding-top: $padding;
+    }
 }
 
 /* Padding on bottom */
-.dr-pb-0 {
-    padding-bottom: 0;
-}
-.dr-pb-1 {
-    padding-bottom: variables.$padding-xsm;
-}
-.dr-pb-2 {
-    padding-bottom: variables.$padding-sm;
-}
-.dr-pb-3 {
-    padding-bottom: variables.$padding-md;
-}
-.dr-pb-4 {
-    padding-bottom: variables.$padding-lg;
-}
-.dr-pb-5 {
-    padding-bottom: variables.$padding-xl;
-}
-.dr-pb-6 {
-    padding-bottom: variables.$padding-xxl;
+@each $size, $padding in variables.$padding-sizes {
+    .dr-pb-#{$size} {
+        padding-bottom: $padding;
+    }
 }
 
 /* Margin all around */
-.dr-m-0 {
-    margin: 0;
-}
-.dr-m-1 {
-    margin: variables.$margin-xsm;
-}
-.dr-m-2 {
-    margin: variables.$margin-sm;
-}
-.dr-m-3 {
-    margin: variables.$margin-md;
-}
-.dr-m-4 {
-    margin: variables.$margin-lg;
-}
-.dr-m-5 {
-    margin: variables.$margin-xl;
-}
-.dr-m-6 {
-    margin: variables.$margin-xxl;
+@each $size, $margin in variables.$margin-sizes {
+    .dr-m-#{$size} {
+        margin: $margin;
+    }
 }
 
 /* Margin on x-axis */
-.dr-mx-0 {
-    margin: 0;
-}
-.dr-mx-1 {
-    margin: 0 variables.$margin-xsm;
-}
-.dr-mx-2 {
-    margin: 0 variables.$margin-sm;
-}
-.dr-mx-3 {
-    margin: 0 variables.$margin-md;
-}
-.dr-mx-4 {
-    margin: 0 variables.$margin-lg;
-}
-.dr-mx-5 {
-    margin: 0 variables.$margin-xl;
-}
-.dr-mx-6 {
-    margin: 0 variables.$margin-xxl;
+@each $size, $margin in variables.$margin-sizes {
+    .dr-mx-#{$size} {
+        margin: 0 $margin;
+    }
 }
 
 /* Margin on y-axis */
-.dr-my-0 {
-    margin: 0;
-}
-.dr-my-1 {
-    margin: variables.$margin-xsm 0;
-}
-.dr-my-2 {
-    margin: variables.$margin-sm 0;
-}
-.dr-my-3 {
-    margin: variables.$margin-md 0;
-}
-.dr-my-4 {
-    margin: variables.$margin-lg 0;
-}
-.dr-my-5 {
-    margin: variables.$margin-xl 0;
-}
-.dr-my-6 {
-    margin: variables.$margin-xxl 0;
+@each $size, $margin in variables.$margin-sizes {
+    .dr-my-#{$size} {
+        margin: $margin 0;
+    }
 }
 
 /* Margin on left side */
-.dr-ml-0 {
-    margin-left: 0;
-}
-.dr-ml-1 {
-    margin-left: variables.$margin-xsm;
-}
-.dr-ml-2 {
-    margin-left: variables.$margin-sm;
-}
-.dr-ml-3 {
-    margin-left: variables.$margin-md;
-}
-.dr-ml-4 {
-    margin-left: variables.$margin-lg;
-}
-.dr-ml-5 {
-    margin-left: variables.$margin-xl;
-}
-.dr-ml-6 {
-    margin-left: variables.$margin-xxl;
+@each $size, $margin in variables.$margin-sizes {
+    .dr-ml-#{$size} {
+        margin-left: $margin;
+    }
 }
 
 /* Margin on right side */
-.dr-mr-0 {
-    margin-right: 0;
-}
-.dr-mr-1 {
-    margin-right: variables.$margin-xsm;
-}
-.dr-mr-2 {
-    margin-right: variables.$margin-sm;
-}
-.dr-mr-3 {
-    margin-right: variables.$margin-md;
-}
-.dr-mr-4 {
-    margin-right: variables.$margin-lg;
-}
-.dr-mr-5 {
-    margin-right: variables.$margin-xl;
-}
-.dr-mr-6 {
-    margin-bottom: variables.$margin-xxl;
+@each $size, $margin in variables.$margin-sizes {
+    .dr-mr-#{$size} {
+        margin-right: $margin;
+    }
 }
 
 /* Margin on top */
-.dr-mt-0 {
-    margin-top: 0;
-}
-.dr-mt-1 {
-    margin-top: variables.$margin-xsm;
-}
-.dr-mt-2 {
-    margin-top: variables.$margin-sm;
-}
-.dr-mt-3 {
-    margin-top: variables.$margin-md;
-}
-.dr-mt-4 {
-    margin-top: variables.$margin-lg;
-}
-.dr-mt-5 {
-    margin-top: variables.$margin-xl;
-}
-.dr-mt-6 {
-    margin-top: variables.$margin-xxl;
+@each $size, $margin in variables.$margin-sizes {
+    .dr-mt-#{$size} {
+        margin-top: $margin;
+    }
 }
 
-/* Mmargin on bottom */
-.dr-mb-0 {
-    margin-bottom: 0;
-}
-.dr-mb-1 {
-    margin-bottom: variables.$margin-xsm;
-}
-.dr-mb-2 {
-    margin-bottom: variables.$margin-sm;
-}
-.dr-mb-3 {
-    margin-bottom: variables.$margin-md;
-}
-.dr-mb-4 {
-    margin-bottom: variables.$margin-lg;
-}
-.dr-mb-5 {
-    margin-bottom: variables.$margin-xl;
-}
-.dr-mb-6 {
-    margin-bottom: variables.$margin-xxl;
+/* Margin on bottom */
+@each $size, $margin in variables.$margin-sizes {
+    .dr-mb-#{$size} {
+        margin-bottom: $margin;
+    }
 }
