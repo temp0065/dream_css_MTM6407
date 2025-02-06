@@ -559,4 +559,33 @@ p {
   margin-bottom: 2.5rem;
 }
 
+/* Containers */
+.dr-container-xsm {
+  max-width: 36rem;
+}
+
+.dr-container-sm {
+  max-width: 48rem;
+}
+
+.dr-container-md {
+  max-width: 62rem;
+}
+
+.dr-container-lg {
+  max-width: 75rem;
+}
+
+.dr-container-xl {
+  max-width: 87.5rem;
+}
+
+.dr-container-xxl {
+  max-width: 100rem;
+}
+
+.dr-container-fluid {
+  max-width: 100%;
+}
+
 /*# sourceMappingURL=style.css.map */

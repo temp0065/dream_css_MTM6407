@@ -1,0 +1,13 @@
+@use "variables";
+@use "sass:map";
+
+/* Containers */
+@each $size, $width in variables.$breakpoints {
+    .dr-container-#{$size} {
+        max-width: $width;
+    }
+}
+
+.dr-container-fluid {
+    max-width: 100%;
+}
