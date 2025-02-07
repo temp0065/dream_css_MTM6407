@@ -21,21 +21,40 @@
 .dr-flex {
     display: flex;
 }
-
 .dr-flex-row {
     flex-direction: row;
 }
-
 .dr-flex-row-r {
     flex-direction: row-reverse;
 }
-
 .dr-flex-column {
     flex-direction: column;
 }
-
 .dr-flex-column-r {
     flex-direction: column-reverse;
+}
+
+/* Justify Content */
+.dr-justify-content-start {
+    justify-content: start;
+}
+.dr-justify-content-center {
+    justify-content: center;
+}
+.dr-justify-content-end {
+    justify-content: end;
+}
+.dr-justify-content-start {
+    justify-content: start;
+}
+.dr-justify-content-between {
+    justify-content: space-between;
+}
+.dr-justify-content-evenly {
+    justify-content: space-evenly;
+}
+.dr-justify-content-around {
+    justify-content: space-around;
 }
 
 // Gaps

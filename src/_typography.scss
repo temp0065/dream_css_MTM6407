@@ -7,32 +7,32 @@ body {
     font-family: variables.$dream-font;
 }
 h1 {
-    font-size: map-get(variables.$font-sizes, "xxl");
-    font-weight: map-get(variables.$font-weights, "b");
+    font-size: map.get(variables.$font-sizes, "xxl");
+    font-weight: map.get(variables.$font-weights, "b");
 }
 h2 {
-    font-size: map-get(variables.$font-sizes, "xl");
-    font-weight: map-get(variables.$font-weights, "b");
+    font-size: map.get(variables.$font-sizes, "xl");
+    font-weight: map.get(variables.$font-weights, "b");
 }
 h3 {
-    font-size: map-get(variables.$font-sizes, "lg");
-    font-weight: map-get(variables.$font-weights, "sb");
+    font-size: map.get(variables.$font-sizes, "lg");
+    font-weight: map.get(variables.$font-weights, "sb");
 }
 h4 {
-    font-size: map-get(variables.$font-sizes, "md");
-    font-weight: map-get(variables.$font-weights, "sb");
+    font-size: map.get(variables.$font-sizes, "md");
+    font-weight: map.get(variables.$font-weights, "sb");
 }
 h5 {
-    font-size: map-get(variables.$font-sizes, "sm");
-    font-weight: map-get(variables.$font-weights, "sb");
+    font-size: map.get(variables.$font-sizes, "sm");
+    font-weight: map.get(variables.$font-weights, "sb");
 }
 h6 {
-    font-size: map-get(variables.$font-sizes, "xsm");
-    font-weight: map-get(variables.$font-weights, "sb");
+    font-size: map.get(variables.$font-sizes, "xsm");
+    font-weight: map.get(variables.$font-weights, "sb");
 }
 p {
-    font-size: map-get(variables.$font-sizes, "sm");
-    font-weight: map-get(variables.$font-weights, "r");
+    font-size: map.get(variables.$font-sizes, "sm");
+    font-weight: map.get(variables.$font-weights, "r");
 }
 
 // Font weight classes

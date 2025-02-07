@@ -1,12 +1,18 @@
 @use "variables";
+@use "sass:map";
 
 // Lists
 ul {
     list-style-type: disc;
-    padding-left: map-get(variables.$padding-sizes, "md");
-    margin: map-get(variables.$margin-sizes, "md");
+    list-style-position: inside;
 }
 
 ol {
-    list-style-type: disc;
+    list-style-type: decimal; 
+    list-style-position: inside; 
+}
+
+ul, ol {
+    padding-left: map.get(variables.$padding-sizes, "md");
+    margin: map.get(variables.$margin-sizes, "md");
 }
