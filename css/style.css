@@ -91,6 +91,21 @@ meter {
 /***
     End of CSS reset
 ***/
+ul {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+ol {
+  list-style-type: decimal;
+  list-style-position: inside;
+}
+
+ul, ol {
+  padding-left: 1rem;
+  margin: 1rem;
+}
+
 body {
   font-family: "Lexend", serif;
 }
@@ -111,13 +126,563 @@ h3 {
 }
 
 h4 {
-  font-size: 1.3125rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+h6 {
+  font-size: 0.875rem;
   font-weight: 600;
 }
 
 p {
   font-size: 1rem;
   font-weight: 400;
+}
+
+.dr-fw-xl {
+  font-weight: 100;
+}
+
+.dr-fw-l {
+  font-weight: 200;
+}
+
+.dr-fw-r {
+  font-weight: 400;
+}
+
+.dr-fw-sb {
+  font-weight: 600;
+}
+
+.dr-fw-b {
+  font-weight: 700;
+}
+
+.dr-fw-xb {
+  font-weight: 900;
+}
+
+/* Padding all around */
+.dr-p-n {
+  padding: 0;
+}
+
+.dr-p-xsm {
+  padding: 0.25rem;
+}
+
+.dr-p-sm {
+  padding: 0.5rem;
+}
+
+.dr-p-md {
+  padding: 1rem;
+}
+
+.dr-p-lg {
+  padding: 1.5rem;
+}
+
+.dr-p-xl {
+  padding: 2rem;
+}
+
+.dr-p-pxxl {
+  padding: 2.5rem;
+}
+
+/* Padding on x-axis */
+.dr-px-n {
+  padding: 0 0;
+}
+
+.dr-px-xsm {
+  padding: 0 0.25rem;
+}
+
+.dr-px-sm {
+  padding: 0 0.5rem;
+}
+
+.dr-px-md {
+  padding: 0 1rem;
+}
+
+.dr-px-lg {
+  padding: 0 1.5rem;
+}
+
+.dr-px-xl {
+  padding: 0 2rem;
+}
+
+.dr-px-pxxl {
+  padding: 0 2.5rem;
+}
+
+/* Padding on y-axis */
+.dr-py-n {
+  padding: 0 0;
+}
+
+.dr-py-xsm {
+  padding: 0.25rem 0;
+}
+
+.dr-py-sm {
+  padding: 0.5rem 0;
+}
+
+.dr-py-md {
+  padding: 1rem 0;
+}
+
+.dr-py-lg {
+  padding: 1.5rem 0;
+}
+
+.dr-py-xl {
+  padding: 2rem 0;
+}
+
+.dr-py-pxxl {
+  padding: 2.5rem 0;
+}
+
+/* Padding on left side */
+.dr-pl-n {
+  padding-left: 0;
+}
+
+.dr-pl-xsm {
+  padding-left: 0.25rem;
+}
+
+.dr-pl-sm {
+  padding-left: 0.5rem;
+}
+
+.dr-pl-md {
+  padding-left: 1rem;
+}
+
+.dr-pl-lg {
+  padding-left: 1.5rem;
+}
+
+.dr-pl-xl {
+  padding-left: 2rem;
+}
+
+.dr-pl-pxxl {
+  padding-left: 2.5rem;
+}
+
+/* Padding on right side */
+.dr-pr-n {
+  padding-right: 0;
+}
+
+.dr-pr-xsm {
+  padding-right: 0.25rem;
+}
+
+.dr-pr-sm {
+  padding-right: 0.5rem;
+}
+
+.dr-pr-md {
+  padding-right: 1rem;
+}
+
+.dr-pr-lg {
+  padding-right: 1.5rem;
+}
+
+.dr-pr-xl {
+  padding-right: 2rem;
+}
+
+.dr-pr-pxxl {
+  padding-right: 2.5rem;
+}
+
+/* Padding on top */
+.dr-pt-n {
+  padding-top: 0;
+}
+
+.dr-pt-xsm {
+  padding-top: 0.25rem;
+}
+
+.dr-pt-sm {
+  padding-top: 0.5rem;
+}
+
+.dr-pt-md {
+  padding-top: 1rem;
+}
+
+.dr-pt-lg {
+  padding-top: 1.5rem;
+}
+
+.dr-pt-xl {
+  padding-top: 2rem;
+}
+
+.dr-pt-pxxl {
+  padding-top: 2.5rem;
+}
+
+/* Padding on bottom */
+.dr-pb-n {
+  padding-bottom: 0;
+}
+
+.dr-pb-xsm {
+  padding-bottom: 0.25rem;
+}
+
+.dr-pb-sm {
+  padding-bottom: 0.5rem;
+}
+
+.dr-pb-md {
+  padding-bottom: 1rem;
+}
+
+.dr-pb-lg {
+  padding-bottom: 1.5rem;
+}
+
+.dr-pb-xl {
+  padding-bottom: 2rem;
+}
+
+.dr-pb-pxxl {
+  padding-bottom: 2.5rem;
+}
+
+/* Margin all around */
+.dr-m-n {
+  margin: 0;
+}
+
+.dr-m-xsm {
+  margin: 0.25rem;
+}
+
+.dr-m-sm {
+  margin: 0.5rem;
+}
+
+.dr-m-md {
+  margin: 1rem;
+}
+
+.dr-m-lg {
+  margin: 1.5rem;
+}
+
+.dr-m-xl {
+  margin: 2rem;
+}
+
+.dr-m-xxl {
+  margin: 2.5rem;
+}
+
+/* Margin on x-axis */
+.dr-mx-n {
+  margin: 0 0;
+}
+
+.dr-mx-xsm {
+  margin: 0 0.25rem;
+}
+
+.dr-mx-sm {
+  margin: 0 0.5rem;
+}
+
+.dr-mx-md {
+  margin: 0 1rem;
+}
+
+.dr-mx-lg {
+  margin: 0 1.5rem;
+}
+
+.dr-mx-xl {
+  margin: 0 2rem;
+}
+
+.dr-mx-xxl {
+  margin: 0 2.5rem;
+}
+
+/* Margin on y-axis */
+.dr-my-n {
+  margin: 0 0;
+}
+
+.dr-my-xsm {
+  margin: 0.25rem 0;
+}
+
+.dr-my-sm {
+  margin: 0.5rem 0;
+}
+
+.dr-my-md {
+  margin: 1rem 0;
+}
+
+.dr-my-lg {
+  margin: 1.5rem 0;
+}
+
+.dr-my-xl {
+  margin: 2rem 0;
+}
+
+.dr-my-xxl {
+  margin: 2.5rem 0;
+}
+
+/* Margin on left side */
+.dr-ml-n {
+  margin-left: 0;
+}
+
+.dr-ml-xsm {
+  margin-left: 0.25rem;
+}
+
+.dr-ml-sm {
+  margin-left: 0.5rem;
+}
+
+.dr-ml-md {
+  margin-left: 1rem;
+}
+
+.dr-ml-lg {
+  margin-left: 1.5rem;
+}
+
+.dr-ml-xl {
+  margin-left: 2rem;
+}
+
+.dr-ml-xxl {
+  margin-left: 2.5rem;
+}
+
+/* Margin on right side */
+.dr-mr-n {
+  margin-right: 0;
+}
+
+.dr-mr-xsm {
+  margin-right: 0.25rem;
+}
+
+.dr-mr-sm {
+  margin-right: 0.5rem;
+}
+
+.dr-mr-md {
+  margin-right: 1rem;
+}
+
+.dr-mr-lg {
+  margin-right: 1.5rem;
+}
+
+.dr-mr-xl {
+  margin-right: 2rem;
+}
+
+.dr-mr-xxl {
+  margin-right: 2.5rem;
+}
+
+/* Margin on top */
+.dr-mt-n {
+  margin-top: 0;
+}
+
+.dr-mt-xsm {
+  margin-top: 0.25rem;
+}
+
+.dr-mt-sm {
+  margin-top: 0.5rem;
+}
+
+.dr-mt-md {
+  margin-top: 1rem;
+}
+
+.dr-mt-lg {
+  margin-top: 1.5rem;
+}
+
+.dr-mt-xl {
+  margin-top: 2rem;
+}
+
+.dr-mt-xxl {
+  margin-top: 2.5rem;
+}
+
+/* Margin on bottom */
+.dr-mb-n {
+  margin-bottom: 0;
+}
+
+.dr-mb-xsm {
+  margin-bottom: 0.25rem;
+}
+
+.dr-mb-sm {
+  margin-bottom: 0.5rem;
+}
+
+.dr-mb-md {
+  margin-bottom: 1rem;
+}
+
+.dr-mb-lg {
+  margin-bottom: 1.5rem;
+}
+
+.dr-mb-xl {
+  margin-bottom: 2rem;
+}
+
+.dr-mb-xxl {
+  margin-bottom: 2.5rem;
+}
+
+/* Containers */
+.dr-container-xsm {
+  max-width: 36rem;
+}
+
+.dr-container-sm {
+  max-width: 48rem;
+}
+
+.dr-container-md {
+  max-width: 62rem;
+}
+
+.dr-container-lg {
+  max-width: 75rem;
+}
+
+.dr-container-xl {
+  max-width: 87.5rem;
+}
+
+.dr-container-xxl {
+  max-width: 100rem;
+}
+
+.dr-container-fluid {
+  max-width: 100%;
+}
+
+.dr-center {
+  margin: 0 auto;
+}
+
+.dr-flex {
+  display: flex;
+}
+
+.dr-flex-row {
+  flex-direction: row;
+}
+
+.dr-flex-row-r {
+  flex-direction: row-reverse;
+}
+
+.dr-flex-column {
+  flex-direction: column;
+}
+
+.dr-flex-column-r {
+  flex-direction: column-reverse;
+}
+
+/* Justify Content */
+.dr-justify-content-start {
+  justify-content: start;
+}
+
+.dr-justify-content-center {
+  justify-content: center;
+}
+
+.dr-justify-content-end {
+  justify-content: end;
+}
+
+.dr-justify-content-start {
+  justify-content: start;
+}
+
+.dr-justify-content-between {
+  justify-content: space-between;
+}
+
+.dr-justify-content-evenly {
+  justify-content: space-evenly;
+}
+
+.dr-justify-content-around {
+  justify-content: space-around;
+}
+
+.dr-g-n {
+  gap: 0;
+}
+
+.dr-g-xsm {
+  gap: 0.25rem;
+}
+
+.dr-g-sm {
+  gap: 0.5rem;
+}
+
+.dr-g-md {
+  gap: 1rem;
+}
+
+.dr-g-lg {
+  gap: 1.5rem;
+}
+
+.dr-g-xl {
+  gap: 2rem;
+}
+
+.dr-g-xxl {
+  gap: 2.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
