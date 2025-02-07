@@ -57,6 +57,23 @@
     justify-content: space-around;
 }
 
+/* Align Items */
+.dr-align-items-start {
+    align-items: start;
+}
+
+.dr-align-items-end {
+    align-items: end;
+}
+
+.dr-align-items-center {
+    align-items: center;
+}
+
+.dr-align-items-start {
+    align-items: stretch;
+}
+
 // Gaps
 @each $sizes, $gap in variables.$gaps {
     .dr-g-#{$sizes} {

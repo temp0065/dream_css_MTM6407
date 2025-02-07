@@ -1,1 +1,8 @@
 @use "spacing";
+@use "variables";
+
+@each $size, $br in variables.$rounded-corners {
+    .dr-br-#{$size} {
+        border-radius: $br;
+    }
+}
