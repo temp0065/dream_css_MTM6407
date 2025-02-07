@@ -1,24 +1,76 @@
-// Colours
-$default-theme: (
-    "primary": #0F52BA,
-    "secondary": #A9A9A9
-);
-
 // Fonts
 $dream-font: "Lexend", serif;
 
-// Font Sizes
-$font-xsm: 0.875rem;
-$font-sm: 1rem;
-$font-md: 1.3125rem;
-$font-lg: 2.25rem;
-$font-xl: 3rem;
-$font-xxl: 3.75rem;
+$font-sizes: (
+    "xsm": 0.875rem,
+    "sm": 1rem,
+    "md": 1.5rem,
+    "lg": 2.25rem,
+    "xl": 3rem,
+    "xxl": 3.75rem
+);
 
 // Font Weights
-$font-weight-extra-light: 100;
-$font-weight-light: 200;
-$font-weight-reg: 400;
-$font-weight-semi-bold: 600;
-$font-weight-bold: 700;
-$font-weight-extra-bold: 900;
+$font-weights: (
+    "xl": 100,
+    "l": 200,
+    "r": 400,
+    "sb": 600,
+    "b": 700,
+    "xb": 900
+);
+
+// Paddings
+$padding-sizes: (
+    "n": 0,
+    "xsm": 0.25rem,
+    "sm": 0.5rem,
+    "md": 1rem,
+    "lg": 1.5rem,
+    "xl": 2rem,
+    "pxxl": 2.5rem
+);
+
+// Margins
+$margin-sizes: (
+    "n": 0,
+    "xsm": 0.25rem,
+    "sm": 0.5rem,
+    "md": 1rem,
+    "lg": 1.5rem,
+    "xl": 2rem,
+    "xxl": 2.5rem
+);
+
+// Gaps
+$gaps: (
+    "n": 0,
+    "xsm": 0.25rem,
+    "sm": 0.5rem,
+    "md": 1rem,
+    "lg": 1.5rem,
+    "xl": 2rem,
+    "xxl": 2.5rem
+);
+
+// Breakpoints
+$breakpoints: (
+    "xsm": 36rem, 
+    "sm": 48rem,
+    "md": 62rem, 
+    "lg": 75rem, 
+    "xl": 87.5rem, 
+    "xxl": 100rem
+);
+
+// Rounded Corners
+$rounded-corners: (
+    "n": 0,
+    "xsm": 0.25rem,
+    "sm": 0.5rem,
+    "md": 1rem,
+    "lg": 1.5rem,
+    "xl": 2rem,
+    "xxl": 2.5rem,
+    "f": 100%
+);
