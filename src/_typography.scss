@@ -1,33 +1,43 @@
 @use "dream-body-font";
 @use "variables";
+@use "sass:map";
 
-// Set base font
+// Sets base fonts
 body {
     font-family: variables.$dream-font;
 }
-
 h1 {
-    font-size: variables.$font-xxl;
-    font-weight: variables.$font-weight-bold;
+    font-size: map.get(variables.$font-sizes, "xxl");
+    font-weight: map.get(variables.$font-weights, "b");
 }
-
 h2 {
-    font-size: variables.$font-xl;
-    font-weight: variables.$font-weight-bold;
+    font-size: map.get(variables.$font-sizes, "xl");
+    font-weight: map.get(variables.$font-weights, "b");
 }
-
 h3 {
-    font-size: variables.$font-lg;
-    font-weight: variables.$font-weight-semi-bold;
+    font-size: map.get(variables.$font-sizes, "lg");
+    font-weight: map.get(variables.$font-weights, "sb");
 }
-
 h4 {
-    font-size: variables.$font-md;
-    font-weight: variables.$font-weight-semi-bold;
+    font-size: map.get(variables.$font-sizes, "md");
+    font-weight: map.get(variables.$font-weights, "sb");
 }
-
+h5 {
+    font-size: map.get(variables.$font-sizes, "sm");
+    font-weight: map.get(variables.$font-weights, "sb");
+}
+h6 {
+    font-size: map.get(variables.$font-sizes, "xsm");
+    font-weight: map.get(variables.$font-weights, "sb");
+}
 p {
-    font-size: variables.$font-sm;
-
-    font-weight: variables.$font-weight-reg;
+    font-size: map.get(variables.$font-sizes, "sm");
+    font-weight: map.get(variables.$font-weights, "r");
 }
+
+// Font weight classes
+@each $size, $weight in variables.$font-weights {
+    .dr-fw-#{$size} {
+        font-weight: $weight;
+    }
+} 
