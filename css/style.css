@@ -193,6 +193,30 @@ p {
   font-size: 3.75rem;
 }
 
+.dr-ds-xsm {
+  font-size: 3rem;
+}
+
+.dr-ds-sm {
+  font-size: 3.75rem;
+}
+
+.dr-ds-md {
+  font-size: 4.5rem;
+}
+
+.dr-ds-lg {
+  font-size: 5.25rem;
+}
+
+.dr-ds-xl {
+  font-size: 6rem;
+}
+
+.dr-ds-xxl {
+  font-size: 6.75rem;
+}
+
 @keyframes float {
   0% {
     scale: 100%;
@@ -671,6 +695,54 @@ p {
 
 .dr-br-f {
   border-radius: 100%;
+}
+
+.dr-b-n {
+  border: none;
+}
+
+.dr-b-xsm {
+  border: 1px solid black;
+}
+
+.dr-b-sm {
+  border: 2px solid black;
+}
+
+.dr-b-md {
+  border: 4px solid black;
+}
+
+.dr-b-lg {
+  border: 6px solid black;
+}
+
+.dr-b-xl {
+  border: 8px solid black;
+}
+
+.dr-b-xxl {
+  border: 10px solid black;
+}
+
+.dr-o-n {
+  opacity: 0;
+}
+
+.dr-o-he {
+  opacity: 0.25;
+}
+
+.dr-o-h {
+  opacity: 0.5;
+}
+
+.dr-o-hf {
+  opacity: 0.75;
+}
+
+.dr-o-f {
+  opacity: 1;
 }
 
 /* Containers */

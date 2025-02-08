@@ -48,3 +48,10 @@ p {
         font-size: $fs;
     }
 }
+
+// Display size classes
+@each $size, $ds in variables.$display-font-sizes {
+    .dr-ds-#{$size} {
+        font-size: $ds;
+    }
+}

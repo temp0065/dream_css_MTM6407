@@ -1,8 +1,30 @@
 @use "spacing";
 @use "variables";
 
+// Classes for rounded corners
 @each $size, $br in variables.$rounded-corners {
     .dr-br-#{$size} {
         border-radius: $br;
+    }
+}
+
+// Classes for border widths
+@each $size, $bw in variables.$border-width {
+    @if $bw == 0 {
+        .dr-b-#{$size} {
+            border: none;
+        }
+    }
+    @else {
+        .dr-b-#{$size} {
+            border: $bw solid black;
+        }
+    }
+}
+
+// Classes for opacity
+@each $amount, $opacity in variables.$opacity {
+    .dr-o-#{$amount} {
+        opacity: $opacity;
     }
 }

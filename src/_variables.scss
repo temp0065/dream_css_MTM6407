@@ -1,6 +1,7 @@
 // Fonts
 $dream-font: "Lexend", serif;
 
+// Font Sizes
 $font-sizes: (
     "xsm": 0.875rem,
     "sm": 1rem,
@@ -8,6 +9,16 @@ $font-sizes: (
     "lg": 2.25rem,
     "xl": 3rem,
     "xxl": 3.75rem
+);
+
+// Display Font Sizes
+$display-font-sizes: (
+    "xsm": 3rem,
+    "sm": 3.75rem,
+    "md": 4.5rem,
+    "lg": 5.25rem,
+    "xl": 6rem,
+    "xxl": 6.75rem
 );
 
 // Font Weights
@@ -73,4 +84,24 @@ $rounded-corners: (
     "xl": 2rem,
     "xxl": 2.5rem,
     "f": 100%
+);
+
+// Border Sizes
+$border-width: (
+    "n": 0,
+    "xsm": 1px,
+    "sm": 2px,
+    "md": 4px,
+    "lg": 6px,
+    "xl": 8px,
+    "xxl": 10px
+);
+
+// Opacity
+$opacity: (
+    "n": 0,
+    "he": 0.25,
+    "h": 0.5,
+    "hf": 0.75,
+    "f": 1
 );
