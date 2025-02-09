@@ -1,0 +1,39 @@
+@use "variables";
+@use "sass:map";
+
+@mixin dr-btn($bg-color: transparent, $txt-color: #000, $border: none) {
+    padding: map.get(variables.$padding-sizes, "sm"), map.get(variables.$padding-sizes, "md");
+    cursor: pointer;
+
+    background: $bg-color;
+    color: $txt-color;
+    @if $border != none {
+        border: map.get(variables.$border-width, "xsm");
+    }
+}
+
+.dr-btn {
+    @include dr-btn;
+}
+
+a.dr-btn {
+    text-decoration: none;
+}
+
+@each $theme-name, $theme-values in variables.$themes {
+    .dr-theme-#{$theme-name} {
+        @each $type, $color in $theme-values {
+            .dr-btn.dr-btn-#{$type} {
+                @include dr-btn($color, map.get($theme-values, "txt-light"));
+            }
+
+            .dr-btn-tp.dr-btn-#{$type} {
+                @include dr-btn($bg-color: $color, $txt-color: $color);
+            }
+        }
+
+        .dr-btn {
+            color: map.get($theme-values, "main-text");
+        }
+    }
+}

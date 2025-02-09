@@ -12,7 +12,16 @@ ol {
     list-style-position: inside; 
 }
 
-ul, ol {
+dl > dt {
+    font-weight: map.get(variables.$font-weights, "sb");
+    font-size: map.get(variables.$font-sizes, "md");
+}
+
+dl > dd {
+    margin-left: map.get(variables.$margin-sizes, "lg");
+}
+
+ul, ol, dl {
     padding-left: map.get(variables.$padding-sizes, "md");
-    margin: map.get(variables.$margin-sizes, "md");
+    margin: map.get(variables.$margin-sizes, "sm");
 }
