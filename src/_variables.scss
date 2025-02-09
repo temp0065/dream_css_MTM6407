@@ -105,3 +105,13 @@ $opacity: (
     "hf": 0.75,
     "f": 1
 );
+
+// Transition Length
+$transition-length: (
+    "xsm": 0.3s,
+    "sm": 0.5s,
+    "md": 0.25s,
+    "lg": 0.5s,
+    "xl": 0.75s,
+    "xxl": 1s
+);

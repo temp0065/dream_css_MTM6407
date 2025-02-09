@@ -14,7 +14,7 @@ ol {
 
 dl > dt {
     font-weight: map.get(variables.$font-weights, "sb");
-    font-size: map.get(variables.$font-sizes, "md");
+    font-size: map.get(variables.$font-sizes, "sm") * 1.313;
 }
 
 dl > dd {
@@ -24,4 +24,20 @@ dl > dd {
 ul, ol, dl {
     padding-left: map.get(variables.$padding-sizes, "md");
     margin: map.get(variables.$margin-sizes, "sm");
+}
+
+// Links
+
+@mixin link($color: #0000ff, $decoration:underline) {
+    color: $color;
+    text-decoration: $decoration;
+    transition: map.get(variables.$transition-length, "sm") ease-out;
+}
+
+a {
+    @include link;
+}
+
+a:hover {
+    opacity: map.get(variables.$opacity, "hf");
 }

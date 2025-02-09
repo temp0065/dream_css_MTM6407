@@ -103,7 +103,7 @@ ol {
 
 dl > dt {
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 1.313rem;
 }
 
 dl > dd {
@@ -113,6 +113,16 @@ dl > dd {
 ul, ol, dl {
   padding-left: 1rem;
   margin: 0.5rem;
+}
+
+a {
+  color: #0000ff;
+  text-decoration: underline;
+  transition: 0.5s ease-out;
+}
+
+a:hover {
+  opacity: 0.75;
 }
 
 body {
@@ -851,6 +861,11 @@ p {
 
 .dr-align-items-start {
   align-items: stretch;
+}
+
+/* Grid Items */
+.dr-grid {
+  display: grid;
 }
 
 .dr-g-n {

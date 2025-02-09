@@ -74,6 +74,11 @@
     align-items: stretch;
 }
 
+/* Grid Items */
+.dr-grid {
+    display: grid;
+}
+
 // Gaps
 @each $sizes, $gap in variables.$gaps {
     .dr-g-#{$sizes} {
