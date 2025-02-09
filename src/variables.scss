@@ -1,7 +1,37 @@
 // Colours
 $default-theme: (
-    "primary": #0F52BA,
-    "secondary": #A9A9A9
+  "background": #45496a,
+  "text": #ffffff,
+  "primary": #e5857b,
+  "secondary": #7d8bae,
+  "accent": #f1b2b2
+);
+
+// Theme 1
+$theme-1: (
+    "background": #012E40,
+    "text": #F2E3D5,
+    "primary": #50DEDE,
+    "secondary": #026773,
+    "accent": #FF3A5F
+);
+
+// Theme 2
+$theme-2: (
+    "background": #ffffff,
+    "text": #000000,
+    "primary": #4fb19d,
+    "secondary": #31695e,
+    "accent": #c8f1e9
+);
+
+// Theme 3
+$theme-3: (
+    "background": #ffffff,
+    "text": #000000,
+    "primary": #e2d34d,
+    "secondary": #74552e,
+    "accent": #e5f1c8
 );
 
 // Fonts
