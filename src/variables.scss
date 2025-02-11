@@ -96,6 +96,19 @@ $theme-purple: (
     "light": hsl(265, 39%, 71%)
 );
 
+// Pink Theme
+$theme-pink: (
+    "background": hsl(330, 30, 4),
+    "text": hsl(330, 22, 91),
+    "primary": hsl(330, 100, 66),
+    "secondary": hsl(330, 86, 23),
+    "accent": hsl(330, 81, 75),
+    "success": #C6F463,
+    "danger": #ED1B47,
+    "warning": #ffdc68,
+    "dark": hsl(330, 30%, 4%),
+    "light": hsl(330, 39%, 71%)
+);
 
 
 
