@@ -12,47 +12,92 @@ $default-theme: (
   "light": #f0cdcd
 );
 
-// Theme 1
-$theme-1: (
-    "background": #012E40,
-    "text": #F2E3D5,
-    "primary": #50DEDE,
-    "secondary": #026773,
-    "accent": #8cffc7,
-    "success": #a6d345,
+// Red Theme
+$theme-red: (
+    "background": hsl(0, 30, 4),
+    "text": hsl(0, 22, 91),
+    "primary": hsl(0, 100, 66),
+    "secondary": hsl(0, 46, 38),
+    "accent": hsl(0, 81, 75),
+    "success": #C6F463,
     "danger": #ED1B47,
-    "warning": #ffa468,
-    "dark": #012E40,
-    "light": #a6ecec
+    "warning": #ffdc68,
+    "dark": hsl(0, 30%, 4%),
+    "light": hsl(0, 39%, 71%)
 );
 
-// Theme 2
-$theme-2: (
-    "background": #080d0e,
-    "text": #e4ebed,
-    "primary": #97c1d1,
-    "secondary": #2d667b,
-    "accent": #4fa9cb,
+// Orange Theme
+$theme-orange: (
+    "background": hsl(20, 30, 4),
+    "text": hsl(20, 22, 91),
+    "primary": hsl(20, 100, 66),
+    "secondary": hsl(20, 86, 23),
+    "accent": hsl(20, 81, 75),
+    "success": #C6F463,
+    "danger": #ED1B47,
+    "warning": #ffdc68,
+    "dark": hsl(20, 30%, 4%),
+    "light": hsl(20, 39%, 71%)
+);
+
+// Yellow Theme
+$theme-yellow: (
+    "background": hsl(40, 30, 4),
+    "text": hsl(40, 22, 91),
+    "primary": hsl(40, 100, 66),
+    "secondary": hsl(40, 86, 23),
+    "accent": hsl(40, 81, 75),
     "success": #C6F463,
     "danger": #ED1B47,
     "warning": #ffa468,
-    "dark": #080d0e,
-    "light": #97c1d1
+    "dark": hsl(40, 30%, 4%),
+    "light": hsl(40, 39%, 71%)
 );
 
-// Theme 3
-$theme-3: (
-    "background": #0e0c08,
-    "text": #edece4,
-    "primary": #e2d34d,
-    "secondary": #74552e,
-    "accent": #f1ebc8,
+// Green Theme
+$theme-green: (
+    "background": hsl(100, 30, 4),
+    "text": hsl(100, 22, 91),
+    "primary": hsl(100, 100, 66),
+    "secondary": hsl(100, 86, 23),
+    "accent": hsl(100, 81, 75),
     "success": #C6F463,
     "danger": #ED1B47,
-    "warning": #ffa468,
-    "dark": #0e0c08,
-    "light": #f1ebc8
+    "warning": #ffdc68,
+    "dark": hsl(100, 30%, 4%),
+    "light": hsl(100, 39%, 71%)
 );
+
+// Blue Theme
+$theme-blue: (
+    "background": hsl(190, 27%, 4%),
+    "text": hsl(193, 20%, 91%),
+    "primary": hsl(197, 39%, 71%),
+    "secondary": hsl(196, 46%, 33%),
+    "accent": hsl(196, 54%, 55%),
+    "success": #C6F463,
+    "danger": #ED1B47,
+    "warning": #ffdc68,
+    "dark": hsl(190, 27%, 4%),
+    "light": hsl(197, 39%, 71%)
+);
+
+// Purple Theme
+$theme-purple: (
+    "background": hsl(265, 30, 4),
+    "text": hsl(265, 22, 91),
+    "primary": hsl(265, 100, 66),
+    "secondary": hsl(265, 86, 23),
+    "accent": hsl(265, 81, 75),
+    "success": #C6F463,
+    "danger": #ED1B47,
+    "warning": #ffdc68,
+    "dark": hsl(265, 30%, 4%),
+    "light": hsl(265, 39%, 71%)
+);
+
+
+
 
 // Fonts
 $dream-font: "Lexend", serif;
