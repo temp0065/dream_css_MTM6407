@@ -2,9 +2,14 @@
 $default-theme: (
   "background": #45496a,
   "text": #ffffff,
-  "primary": #e5857b,
+  "primary": #e6857a,
   "secondary": #7d8bae,
-  "accent": #f1b2b2
+  "accent": #f1b2b2,
+  "success": #C6F463,
+  "danger": #ED1B47,
+  "warning": #FFDD80,
+  "dark": #45496a,
+  "light": #f0cdcd
 );
 
 // Theme 1
@@ -13,25 +18,40 @@ $theme-1: (
     "text": #F2E3D5,
     "primary": #50DEDE,
     "secondary": #026773,
-    "accent": #FF3A5F
+    "accent": #8cffc7,
+    "success": #a6d345,
+    "danger": #ED1B47,
+    "warning": #ffa468,
+    "dark": #012E40,
+    "light": #a6ecec
 );
 
 // Theme 2
 $theme-2: (
-    "background": #ffffff,
-    "text": #000000,
-    "primary": #4fb19d,
-    "secondary": #31695e,
-    "accent": #c8f1e9
+    "background": #080d0e,
+    "text": #e4ebed,
+    "primary": #97c1d1,
+    "secondary": #2d667b,
+    "accent": #4fa9cb,
+    "success": #C6F463,
+    "danger": #ED1B47,
+    "warning": #ffa468,
+    "dark": #080d0e,
+    "light": #97c1d1
 );
 
 // Theme 3
 $theme-3: (
-    "background": #ffffff,
-    "text": #000000,
+    "background": #0e0c08,
+    "text": #edece4,
     "primary": #e2d34d,
     "secondary": #74552e,
-    "accent": #e5f1c8
+    "accent": #f1ebc8,
+    "success": #C6F463,
+    "danger": #ED1B47,
+    "warning": #ffa468,
+    "dark": #0e0c08,
+    "light": #f1ebc8
 );
 
 // Fonts
