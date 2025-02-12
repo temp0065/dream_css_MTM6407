@@ -1,3 +1,45 @@
+// Colours
+$themes: (
+    "default-theme-light": (
+        "primary": (
+                "color": #0096FF,
+                "hover": #0376c8,
+                "text": #000000
+        ),
+        "secondary": (
+                "color": #c2c2c2,
+                "hover": #858585,
+                "text": #000000
+        ),
+        "success": (
+                "color": #15fc62,
+                "hover": #11b848,
+                "text": #000000
+        ),
+        "danger": (
+                "color": #ff1313,
+                "hover": #b10f0f,
+                "text": #ffffff
+        ),
+        "warning": (
+            "color": #ffab1b,
+            "hover": #cd8915,
+            "text": #ffffff
+        ),
+        "light": (
+            "color": #ffffff,
+            "hover": #cecece,
+            "text": #000000
+        ),
+        "dark": (
+            "color": #000000,
+            "hover": #202020,
+            "text": #ffffff
+        ),
+        "text-main": #000
+    )
+);
+
 // Fonts
 $dream-font: "Lexend", serif;
 

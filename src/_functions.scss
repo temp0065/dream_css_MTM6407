@@ -1,0 +1,7 @@
+@use "sass:map";
+@use "sass:meta";
+
+// Checks if value is a mao
+@function is-map($value) {
+    @return meta.type-of($value) == "map";
+}

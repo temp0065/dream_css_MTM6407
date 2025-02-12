@@ -1,10 +1,12 @@
 @use "dream-body-font";
 @use "variables";
+@use "functions";
 @use "sass:map";
 
 // Sets base fonts
 body {
     font-family: variables.$dream-font;
+    color: map.get(map.get(variables.$themes, "default-theme-light"), "text-main");
 }
 h1 {
     font-size: map.get(variables.$font-sizes, "xxl");
@@ -53,5 +55,22 @@ p {
 @each $size, $ds in variables.$display-font-sizes {
     .dr-ds-#{$size} {
         font-size: $ds;
+    }
+}
+
+// Sets font color
+@each $theme-name, $theme-values in variables.$themes {
+    .dr-#{$theme-name} {
+        body {
+            color: map.get($theme-values, "text-main");
+        }
+
+        @each $type, $color in $theme-values {
+            @if functions.is-map($color) {
+                .dr-fc-#{$type} {
+                    color: map.get($color, "color");
+                }
+            }
+        }
     }
 }

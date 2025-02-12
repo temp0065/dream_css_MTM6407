@@ -125,8 +125,46 @@ a:hover {
   opacity: 0.75;
 }
 
+/* Table Styles */
+.dr-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Header */
+.dr-table thead {
+  background-color: #012E40;
+  color: white;
+  text-transform: uppercase;
+}
+
+.dr-table th {
+  padding: 12px 16px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Table Body */
+.dr-table tbody tr {
+  border-bottom: 1px solid #ddd;
+}
+
+.dr-table tbody tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+/* Table Cells */
+.dr-table td {
+  padding: 12px 16px;
+  text-align: center;
+}
+
 body {
   font-family: "Lexend", serif;
+  color: #000;
 }
 
 h1 {
@@ -234,6 +272,31 @@ p {
 
 .dr-ds-xxl {
   font-size: 6.75rem;
+}
+
+.dr-default-theme-light body {
+  color: #000;
+}
+.dr-default-theme-light .dr-fc-primary {
+  color: #0096FF;
+}
+.dr-default-theme-light .dr-fc-secondary {
+  color: #c2c2c2;
+}
+.dr-default-theme-light .dr-fc-success {
+  color: #15fc62;
+}
+.dr-default-theme-light .dr-fc-danger {
+  color: #ff1313;
+}
+.dr-default-theme-light .dr-fc-warning {
+  color: #ffab1b;
+}
+.dr-default-theme-light .dr-fc-light {
+  color: #ffffff;
+}
+.dr-default-theme-light .dr-fc-dark {
+  color: #000000;
 }
 
 @keyframes float {
@@ -894,6 +957,159 @@ p {
 
 .dr-g-xxl {
   gap: 2.5rem;
+}
+
+.dr-btn {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background: transparent;
+  color: #000;
+  border-radius: 0.5rem;
+}
+
+a.dr-btn {
+  text-decoration: none;
+}
+
+.dr-default-theme-light .dr-btn.dr-btn-primary {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background: #0096FF;
+  color: #000000;
+}
+.dr-default-theme-light .dr-btn.dr-btn-primary:hover,
+.dr-default-theme-light .dr-btn-tp.dr-btn-primary:hover {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background: #0376c8;
+  color: #000000;
+}
+.dr-default-theme-light .dr-btn-tp.dr-btn-primary {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background: transparent;
+  color: #0096FF;
+  border: 1px solid #0096FF;
+}
+.dr-default-theme-light .dr-btn.dr-btn-secondary {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background: #c2c2c2;
+  color: #000000;
+}
+.dr-default-theme-light .dr-btn.dr-btn-secondary:hover,
+.dr-default-theme-light .dr-btn-tp.dr-btn-secondary:hover {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background: #858585;
+  color: #000000;
+}
+.dr-default-theme-light .dr-btn-tp.dr-btn-secondary {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background: transparent;
+  color: #c2c2c2;
+  border: 1px solid #c2c2c2;
+}
+.dr-default-theme-light .dr-btn.dr-btn-success {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background: #15fc62;
+  color: #000000;
+}
+.dr-default-theme-light .dr-btn.dr-btn-success:hover,
+.dr-default-theme-light .dr-btn-tp.dr-btn-success:hover {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background: #11b848;
+  color: #000000;
+}
+.dr-default-theme-light .dr-btn-tp.dr-btn-success {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background: transparent;
+  color: #15fc62;
+  border: 1px solid #15fc62;
+}
+.dr-default-theme-light .dr-btn.dr-btn-danger {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background: #ff1313;
+  color: #ffffff;
+}
+.dr-default-theme-light .dr-btn.dr-btn-danger:hover,
+.dr-default-theme-light .dr-btn-tp.dr-btn-danger:hover {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background: #b10f0f;
+  color: #ffffff;
+}
+.dr-default-theme-light .dr-btn-tp.dr-btn-danger {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background: transparent;
+  color: #ff1313;
+  border: 1px solid #ff1313;
+}
+.dr-default-theme-light .dr-btn.dr-btn-warning {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background: #ffab1b;
+  color: #ffffff;
+}
+.dr-default-theme-light .dr-btn.dr-btn-warning:hover,
+.dr-default-theme-light .dr-btn-tp.dr-btn-warning:hover {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background: #cd8915;
+  color: #ffffff;
+}
+.dr-default-theme-light .dr-btn-tp.dr-btn-warning {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background: transparent;
+  color: #ffab1b;
+  border: 1px solid #ffab1b;
+}
+.dr-default-theme-light .dr-btn.dr-btn-light {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background: #ffffff;
+  color: #000000;
+}
+.dr-default-theme-light .dr-btn.dr-btn-light:hover,
+.dr-default-theme-light .dr-btn-tp.dr-btn-light:hover {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background: #cecece;
+  color: #000000;
+}
+.dr-default-theme-light .dr-btn-tp.dr-btn-light {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+.dr-default-theme-light .dr-btn.dr-btn-dark {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background: #000000;
+  color: #ffffff;
+}
+.dr-default-theme-light .dr-btn.dr-btn-dark:hover,
+.dr-default-theme-light .dr-btn-tp.dr-btn-dark:hover {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background: #202020;
+  color: #ffffff;
+}
+.dr-default-theme-light .dr-btn-tp.dr-btn-dark {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background: transparent;
+  color: #000000;
+  border: 1px solid #000000;
 }
 
 /*# sourceMappingURL=style.css.map */

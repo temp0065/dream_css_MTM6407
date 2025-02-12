@@ -1,19 +1,21 @@
 @use "variables";
+@use "functions";
 @use "sass:map";
 
 @mixin dr-btn($bg-color: transparent, $txt-color: #000, $border: none) {
-    padding: map.get(variables.$padding-sizes, "sm"), map.get(variables.$padding-sizes, "md");
+    padding: map.get(variables.$padding-sizes, "sm") map.get(variables.$padding-sizes, "md");
     cursor: pointer;
 
     background: $bg-color;
     color: $txt-color;
     @if $border != none {
-        border: map.get(variables.$border-width, "xsm");
+        border: map.get(variables.$border-width, "xsm") solid $border;
     }
 }
 
 .dr-btn {
     @include dr-btn;
+    border-radius: map.get(variables.$rounded-corners, "sm");
 }
 
 a.dr-btn {
@@ -21,14 +23,25 @@ a.dr-btn {
 }
 
 @each $theme-name, $theme-values in variables.$themes {
-    .dr-theme-#{$theme-name} {
+    .dr-#{$theme-name} {
         @each $type, $color in $theme-values {
             .dr-btn.dr-btn-#{$type} {
-                @include dr-btn($color, map.get($theme-values, "txt-light"));
+                @if functions.is-map($color) {
+                    @include dr-btn($bg-color: map.get($color, "color"), $txt-color: map.get($color, "text"));
+                }
+            }
+
+            .dr-btn.dr-btn-#{$type}:hover,
+            .dr-btn-tp.dr-btn-#{$type}:hover  {
+                @if functions.is-map($color) {
+                    @include dr-btn($bg-color: map.get($color, "hover"), $txt-color: map.get($color, "text"));
+                }
             }
 
             .dr-btn-tp.dr-btn-#{$type} {
-                @include dr-btn($bg-color: $color, $txt-color: $color);
+                @if functions.is-map($color) {
+                    @include dr-btn($txt-color: map.get($color, "color"), $border: map.get($color, "color"));
+                }
             }
         }
 
