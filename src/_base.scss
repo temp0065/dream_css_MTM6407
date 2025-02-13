@@ -1,5 +1,22 @@
 @use "variables";
+@use "functions";
 @use "sass:map";
+
+// Base styles
+.dr-n-und {
+    text-decoration: none;
+}
+
+.dr-und {
+    text-decoration: underline;
+}
+
+// Sets base page color for theme
+@each $theme-name, $theme-values in variables.$themes {
+    .dr-#{$theme-name} {
+        background: map.get($theme-values, "main-bg");
+    }
+}
 
 // Lists
 ul {
@@ -28,7 +45,7 @@ ul, ol, dl {
 
 // Links
 
-@mixin link($color: #0000ff, $decoration:underline) {
+@mixin link($color: map.get(map.get(map.get(variables.$themes, "default-theme-light"), "primary"), "color"), $decoration:underline) {
     color: $color;
     text-decoration: $decoration;
     transition: map.get(variables.$transition-length, "sm") ease-out;
@@ -40,6 +57,28 @@ a {
 
 a:hover {
     opacity: map.get(variables.$opacity, "hf");
+}
+
+@each $theme-name, $theme-values in variables.$themes {
+    .dr-#{$theme-name} {
+        @each $type, $color in $theme-values {
+            a.dr-link-#{$type} {
+                @if functions.is-map($color) {
+                    @include link($color: map.get($color, "color"));
+                }
+            }
+
+            a.dr-link-#{$type}:hover {
+                @if functions.is-map($color) {
+                    @include link($color: map.get($color, "hover"));
+                }
+            }
+        }
+
+        .dr-btn {
+            color: map.get($theme-values, "main-text");
+        }
+    }
 }
 
 // Tables
@@ -71,11 +110,66 @@ border-bottom: 1px solid #ddd;
 }
 
 .dr-table tbody tr:nth-child(even) {
-background-color: #f8f9fa;
+    background-color: #f8f9fa;
 }
 
 /* Table Cells */
 .dr-table td {
 padding: 12px 16px;
 text-align: center;
+}
+
+/* Form Styling */
+form {
+    max-width: 500px;
+    padding: 20px;
+    background: #012E40;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Labels */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: white;
+}
+
+/* Radio and Checkbox Styling */
+.form-group-inline {
+    display: block;
+    gap: 15px;
+}
+
+/* Regular text for radio and checkbox labels */
+.form-group-inline label {
+    font-weight: normal;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+/* Input Fields */
+input[type="text"], 
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: map.get(variables.$padding-sizes, "sm");
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+/* Placeholder Styling */
+input::placeholder, 
+textarea::placeholder {
+    color: rgba(0, 0, 0, 0.5);
 }

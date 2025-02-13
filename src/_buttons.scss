@@ -13,7 +13,8 @@
     }
 }
 
-.dr-btn {
+button.dr-btn,
+a.dr-btn {
     @include dr-btn;
     border-radius: map.get(variables.$rounded-corners, "sm");
 }
@@ -25,22 +26,34 @@ a.dr-btn {
 @each $theme-name, $theme-values in variables.$themes {
     .dr-#{$theme-name} {
         @each $type, $color in $theme-values {
-            .dr-btn.dr-btn-#{$type} {
+            button.dr-btn.dr-btn-#{$type},
+            a.dr-btn.dr-btn-#{$type} {
                 @if functions.is-map($color) {
                     @include dr-btn($bg-color: map.get($color, "color"), $txt-color: map.get($color, "text"));
                 }
             }
 
-            .dr-btn.dr-btn-#{$type}:hover,
-            .dr-btn-tp.dr-btn-#{$type}:hover  {
+            button.dr-btn.dr-btn-#{$type}:hover,
+            a.dr-btn.dr-btn-#{$type}:hover,
+            button.dr-btn-tp.dr-btn-#{$type}:hover, 
+            a.dr-btn-tp.dr-btn-#{$type}:hover {
                 @if functions.is-map($color) {
                     @include dr-btn($bg-color: map.get($color, "hover"), $txt-color: map.get($color, "text"));
                 }
             }
 
-            .dr-btn-tp.dr-btn-#{$type} {
+            button.dr-btn-tp.dr-btn-#{$type}
+            a.dr-btn-tp.dr-btn-#{$type} {
                 @if functions.is-map($color) {
                     @include dr-btn($txt-color: map.get($color, "color"), $border: map.get($color, "color"));
+                }
+            }
+
+            button.dr-btn-#{$type}:focus,
+            a.dr-btn-#{$type}:focus {
+                @if functions.is-map($color) {
+                    outline: map.get(variables.$border-width, "xsm") solid map.get($color, "color");
+                    outline-offset: 2px;
                 }
             }
         }

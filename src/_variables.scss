@@ -36,8 +36,48 @@ $themes: (
             "hover": #202020,
             "text": #ffffff
         ),
-        "text-main": #000
-    )
+        "text-main": #000,
+        "main-bg": #ffffff
+    ),
+    "default-theme-dark": (
+        "primary": (
+                "color": #0096FF,
+                "hover": #0376c8,
+                "text": #000000
+        ),
+        "secondary": (
+                "color": #c2c2c2,
+                "hover": #858585,
+                "text": #000000
+        ),
+        "success": (
+                "color": #15fc62,
+                "hover": #11b848,
+                "text": #000000
+        ),
+        "danger": (
+                "color": #ff1313,
+                "hover": #b10f0f,
+                "text": #ffffff
+        ),
+        "warning": (
+            "color": #ffab1b,
+            "hover": #cd8915,
+            "text": #ffffff
+        ),
+        "light": (
+            "color": #ffffff,
+            "hover": #cecece,
+            "text": #000000
+        ),
+        "dark": (
+            "color": #000000,
+            "hover": #202020,
+            "text": #ffffff
+        ),
+        "text-main": #ffffff,
+        "main-bg": #000000
+    ),
 );
 
 // Fonts
@@ -119,12 +159,12 @@ $breakpoints: (
 // Rounded Corners
 $rounded-corners: (
     "n": 0,
-    "xsm": 0.25rem,
-    "sm": 0.5rem,
-    "md": 1rem,
-    "lg": 1.5rem,
-    "xl": 2rem,
-    "xxl": 2.5rem,
+    "xsm": 4px,
+    "sm": 8px,
+    "md": 12px,
+    "lg": 16px,
+    "xl": 20px,
+    "xxl": 24px,
     "f": 100%
 );
 

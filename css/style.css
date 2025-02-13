@@ -91,6 +91,22 @@ meter {
 /***
     End of CSS reset
 ***/
+.dr-n-und {
+  text-decoration: none;
+}
+
+.dr-und {
+  text-decoration: underline;
+}
+
+.dr-default-theme-light {
+  background: #ffffff;
+}
+
+.dr-default-theme-dark {
+  background: #000000;
+}
+
 ul {
   list-style-type: disc;
   list-style-position: inside;
@@ -116,7 +132,7 @@ ul, ol, dl {
 }
 
 a {
-  color: #0000ff;
+  color: #0096FF;
   text-decoration: underline;
   transition: 0.5s ease-out;
 }
@@ -125,6 +141,146 @@ a:hover {
   opacity: 0.75;
 }
 
+.dr-default-theme-light a.dr-link-primary {
+  color: #0096FF;
+  text-decoration: underline;
+  transition: 0.5s ease-out;
+}
+.dr-default-theme-light a.dr-link-primary:hover {
+  color: #0376c8;
+  text-decoration: underline;
+  transition: 0.5s ease-out;
+}
+.dr-default-theme-light a.dr-link-secondary {
+  color: #c2c2c2;
+  text-decoration: underline;
+  transition: 0.5s ease-out;
+}
+.dr-default-theme-light a.dr-link-secondary:hover {
+  color: #858585;
+  text-decoration: underline;
+  transition: 0.5s ease-out;
+}
+.dr-default-theme-light a.dr-link-success {
+  color: #15fc62;
+  text-decoration: underline;
+  transition: 0.5s ease-out;
+}
+.dr-default-theme-light a.dr-link-success:hover {
+  color: #11b848;
+  text-decoration: underline;
+  transition: 0.5s ease-out;
+}
+.dr-default-theme-light a.dr-link-danger {
+  color: #ff1313;
+  text-decoration: underline;
+  transition: 0.5s ease-out;
+}
+.dr-default-theme-light a.dr-link-danger:hover {
+  color: #b10f0f;
+  text-decoration: underline;
+  transition: 0.5s ease-out;
+}
+.dr-default-theme-light a.dr-link-warning {
+  color: #ffab1b;
+  text-decoration: underline;
+  transition: 0.5s ease-out;
+}
+.dr-default-theme-light a.dr-link-warning:hover {
+  color: #cd8915;
+  text-decoration: underline;
+  transition: 0.5s ease-out;
+}
+.dr-default-theme-light a.dr-link-light {
+  color: #ffffff;
+  text-decoration: underline;
+  transition: 0.5s ease-out;
+}
+.dr-default-theme-light a.dr-link-light:hover {
+  color: #cecece;
+  text-decoration: underline;
+  transition: 0.5s ease-out;
+}
+.dr-default-theme-light a.dr-link-dark {
+  color: #000000;
+  text-decoration: underline;
+  transition: 0.5s ease-out;
+}
+.dr-default-theme-light a.dr-link-dark:hover {
+  color: #202020;
+  text-decoration: underline;
+  transition: 0.5s ease-out;
+}
+.dr-default-theme-dark a.dr-link-primary {
+  color: #0096FF;
+  text-decoration: underline;
+  transition: 0.5s ease-out;
+}
+.dr-default-theme-dark a.dr-link-primary:hover {
+  color: #0376c8;
+  text-decoration: underline;
+  transition: 0.5s ease-out;
+}
+.dr-default-theme-dark a.dr-link-secondary {
+  color: #c2c2c2;
+  text-decoration: underline;
+  transition: 0.5s ease-out;
+}
+.dr-default-theme-dark a.dr-link-secondary:hover {
+  color: #858585;
+  text-decoration: underline;
+  transition: 0.5s ease-out;
+}
+.dr-default-theme-dark a.dr-link-success {
+  color: #15fc62;
+  text-decoration: underline;
+  transition: 0.5s ease-out;
+}
+.dr-default-theme-dark a.dr-link-success:hover {
+  color: #11b848;
+  text-decoration: underline;
+  transition: 0.5s ease-out;
+}
+.dr-default-theme-dark a.dr-link-danger {
+  color: #ff1313;
+  text-decoration: underline;
+  transition: 0.5s ease-out;
+}
+.dr-default-theme-dark a.dr-link-danger:hover {
+  color: #b10f0f;
+  text-decoration: underline;
+  transition: 0.5s ease-out;
+}
+.dr-default-theme-dark a.dr-link-warning {
+  color: #ffab1b;
+  text-decoration: underline;
+  transition: 0.5s ease-out;
+}
+.dr-default-theme-dark a.dr-link-warning:hover {
+  color: #cd8915;
+  text-decoration: underline;
+  transition: 0.5s ease-out;
+}
+.dr-default-theme-dark a.dr-link-light {
+  color: #ffffff;
+  text-decoration: underline;
+  transition: 0.5s ease-out;
+}
+.dr-default-theme-dark a.dr-link-light:hover {
+  color: #cecece;
+  text-decoration: underline;
+  transition: 0.5s ease-out;
+}
+.dr-default-theme-dark a.dr-link-dark {
+  color: #000000;
+  text-decoration: underline;
+  transition: 0.5s ease-out;
+}
+.dr-default-theme-dark a.dr-link-dark:hover {
+  color: #202020;
+  text-decoration: underline;
+  transition: 0.5s ease-out;
+}
 /* Table Styles */
 .dr-table {
   width: 100%;
@@ -160,6 +316,61 @@ a:hover {
 .dr-table td {
   padding: 12px 16px;
   text-align: center;
+}
+
+/* Form Styling */
+form {
+  max-width: 500px;
+  padding: 20px;
+  background: #012E40;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Labels */
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: white;
+}
+
+/* Radio and Checkbox Styling */
+.form-group-inline {
+  display: block;
+  gap: 15px;
+}
+
+/* Regular text for radio and checkbox labels */
+.form-group-inline label {
+  font-weight: normal;
+  display: inline-block;
+  margin-right: 15px;
+}
+
+/* Input Fields */
+input[type=text],
+input[type=email],
+input[type=password],
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background: #fff;
+}
+
+/* Placeholder Styling */
+input::placeholder,
+textarea::placeholder {
+  color: rgba(0, 0, 0, 0.5);
 }
 
 body {
@@ -274,7 +485,7 @@ p {
   font-size: 6.75rem;
 }
 
-.dr-default-theme-light body {
+.dr-default-theme-light {
   color: #000;
 }
 .dr-default-theme-light .dr-fc-primary {
@@ -296,6 +507,31 @@ p {
   color: #ffffff;
 }
 .dr-default-theme-light .dr-fc-dark {
+  color: #000000;
+}
+
+.dr-default-theme-dark {
+  color: #ffffff;
+}
+.dr-default-theme-dark .dr-fc-primary {
+  color: #0096FF;
+}
+.dr-default-theme-dark .dr-fc-secondary {
+  color: #c2c2c2;
+}
+.dr-default-theme-dark .dr-fc-success {
+  color: #15fc62;
+}
+.dr-default-theme-dark .dr-fc-danger {
+  color: #ff1313;
+}
+.dr-default-theme-dark .dr-fc-warning {
+  color: #ffab1b;
+}
+.dr-default-theme-dark .dr-fc-light {
+  color: #ffffff;
+}
+.dr-default-theme-dark .dr-fc-dark {
   color: #000000;
 }
 
@@ -752,27 +988,27 @@ p {
 }
 
 .dr-br-xsm {
-  border-radius: 0.25rem;
+  border-radius: 4px;
 }
 
 .dr-br-sm {
-  border-radius: 0.5rem;
+  border-radius: 8px;
 }
 
 .dr-br-md {
-  border-radius: 1rem;
+  border-radius: 12px;
 }
 
 .dr-br-lg {
-  border-radius: 1.5rem;
+  border-radius: 16px;
 }
 
 .dr-br-xl {
-  border-radius: 2rem;
+  border-radius: 20px;
 }
 
 .dr-br-xxl {
-  border-radius: 2.5rem;
+  border-radius: 24px;
 }
 
 .dr-br-f {
@@ -825,6 +1061,50 @@ p {
 
 .dr-o-f {
   opacity: 1;
+}
+
+.dr-default-theme-light .dr-bg-primary {
+  background: #0096FF;
+}
+.dr-default-theme-light .dr-bg-secondary {
+  background: #c2c2c2;
+}
+.dr-default-theme-light .dr-bg-success {
+  background: #15fc62;
+}
+.dr-default-theme-light .dr-bg-danger {
+  background: #ff1313;
+}
+.dr-default-theme-light .dr-bg-warning {
+  background: #ffab1b;
+}
+.dr-default-theme-light .dr-bg-light {
+  background: #ffffff;
+}
+.dr-default-theme-light .dr-bg-dark {
+  background: #000000;
+}
+
+.dr-default-theme-dark .dr-bg-primary {
+  background: #0096FF;
+}
+.dr-default-theme-dark .dr-bg-secondary {
+  background: #c2c2c2;
+}
+.dr-default-theme-dark .dr-bg-success {
+  background: #15fc62;
+}
+.dr-default-theme-dark .dr-bg-danger {
+  background: #ff1313;
+}
+.dr-default-theme-dark .dr-bg-warning {
+  background: #ffab1b;
+}
+.dr-default-theme-dark .dr-bg-light {
+  background: #ffffff;
+}
+.dr-default-theme-dark .dr-bg-dark {
+  background: #000000;
 }
 
 /* Containers */
@@ -959,157 +1239,410 @@ p {
   gap: 2.5rem;
 }
 
-.dr-btn {
+button.dr-btn,
+a.dr-btn {
   padding: 0.5rem 1rem;
   cursor: pointer;
   background: transparent;
   color: #000;
-  border-radius: 0.5rem;
+  border-radius: 8px;
 }
 
 a.dr-btn {
   text-decoration: none;
 }
 
-.dr-default-theme-light .dr-btn.dr-btn-primary {
+.dr-default-theme-light button.dr-btn.dr-btn-primary,
+.dr-default-theme-light a.dr-btn.dr-btn-primary {
   padding: 0.5rem 1rem;
   cursor: pointer;
   background: #0096FF;
   color: #000000;
 }
-.dr-default-theme-light .dr-btn.dr-btn-primary:hover,
-.dr-default-theme-light .dr-btn-tp.dr-btn-primary:hover {
+.dr-default-theme-light button.dr-btn.dr-btn-primary:hover,
+.dr-default-theme-light a.dr-btn.dr-btn-primary:hover,
+.dr-default-theme-light button.dr-btn-tp.dr-btn-primary:hover,
+.dr-default-theme-light a.dr-btn-tp.dr-btn-primary:hover {
   padding: 0.5rem 1rem;
   cursor: pointer;
   background: #0376c8;
   color: #000000;
 }
-.dr-default-theme-light .dr-btn-tp.dr-btn-primary {
+.dr-default-theme-light button.dr-btn-tp.dr-btn-primary a.dr-btn-tp.dr-btn-primary {
   padding: 0.5rem 1rem;
   cursor: pointer;
   background: transparent;
   color: #0096FF;
   border: 1px solid #0096FF;
 }
-.dr-default-theme-light .dr-btn.dr-btn-secondary {
+.dr-default-theme-light button.dr-btn-primary:focus,
+.dr-default-theme-light a.dr-btn-primary:focus {
+  outline: 1px solid #0096FF;
+  outline-offset: 2px;
+}
+.dr-default-theme-light button.dr-btn.dr-btn-secondary,
+.dr-default-theme-light a.dr-btn.dr-btn-secondary {
   padding: 0.5rem 1rem;
   cursor: pointer;
   background: #c2c2c2;
   color: #000000;
 }
-.dr-default-theme-light .dr-btn.dr-btn-secondary:hover,
-.dr-default-theme-light .dr-btn-tp.dr-btn-secondary:hover {
+.dr-default-theme-light button.dr-btn.dr-btn-secondary:hover,
+.dr-default-theme-light a.dr-btn.dr-btn-secondary:hover,
+.dr-default-theme-light button.dr-btn-tp.dr-btn-secondary:hover,
+.dr-default-theme-light a.dr-btn-tp.dr-btn-secondary:hover {
   padding: 0.5rem 1rem;
   cursor: pointer;
   background: #858585;
   color: #000000;
 }
-.dr-default-theme-light .dr-btn-tp.dr-btn-secondary {
+.dr-default-theme-light button.dr-btn-tp.dr-btn-secondary a.dr-btn-tp.dr-btn-secondary {
   padding: 0.5rem 1rem;
   cursor: pointer;
   background: transparent;
   color: #c2c2c2;
   border: 1px solid #c2c2c2;
 }
-.dr-default-theme-light .dr-btn.dr-btn-success {
+.dr-default-theme-light button.dr-btn-secondary:focus,
+.dr-default-theme-light a.dr-btn-secondary:focus {
+  outline: 1px solid #c2c2c2;
+  outline-offset: 2px;
+}
+.dr-default-theme-light button.dr-btn.dr-btn-success,
+.dr-default-theme-light a.dr-btn.dr-btn-success {
   padding: 0.5rem 1rem;
   cursor: pointer;
   background: #15fc62;
   color: #000000;
 }
-.dr-default-theme-light .dr-btn.dr-btn-success:hover,
-.dr-default-theme-light .dr-btn-tp.dr-btn-success:hover {
+.dr-default-theme-light button.dr-btn.dr-btn-success:hover,
+.dr-default-theme-light a.dr-btn.dr-btn-success:hover,
+.dr-default-theme-light button.dr-btn-tp.dr-btn-success:hover,
+.dr-default-theme-light a.dr-btn-tp.dr-btn-success:hover {
   padding: 0.5rem 1rem;
   cursor: pointer;
   background: #11b848;
   color: #000000;
 }
-.dr-default-theme-light .dr-btn-tp.dr-btn-success {
+.dr-default-theme-light button.dr-btn-tp.dr-btn-success a.dr-btn-tp.dr-btn-success {
   padding: 0.5rem 1rem;
   cursor: pointer;
   background: transparent;
   color: #15fc62;
   border: 1px solid #15fc62;
 }
-.dr-default-theme-light .dr-btn.dr-btn-danger {
+.dr-default-theme-light button.dr-btn-success:focus,
+.dr-default-theme-light a.dr-btn-success:focus {
+  outline: 1px solid #15fc62;
+  outline-offset: 2px;
+}
+.dr-default-theme-light button.dr-btn.dr-btn-danger,
+.dr-default-theme-light a.dr-btn.dr-btn-danger {
   padding: 0.5rem 1rem;
   cursor: pointer;
   background: #ff1313;
   color: #ffffff;
 }
-.dr-default-theme-light .dr-btn.dr-btn-danger:hover,
-.dr-default-theme-light .dr-btn-tp.dr-btn-danger:hover {
+.dr-default-theme-light button.dr-btn.dr-btn-danger:hover,
+.dr-default-theme-light a.dr-btn.dr-btn-danger:hover,
+.dr-default-theme-light button.dr-btn-tp.dr-btn-danger:hover,
+.dr-default-theme-light a.dr-btn-tp.dr-btn-danger:hover {
   padding: 0.5rem 1rem;
   cursor: pointer;
   background: #b10f0f;
   color: #ffffff;
 }
-.dr-default-theme-light .dr-btn-tp.dr-btn-danger {
+.dr-default-theme-light button.dr-btn-tp.dr-btn-danger a.dr-btn-tp.dr-btn-danger {
   padding: 0.5rem 1rem;
   cursor: pointer;
   background: transparent;
   color: #ff1313;
   border: 1px solid #ff1313;
 }
-.dr-default-theme-light .dr-btn.dr-btn-warning {
+.dr-default-theme-light button.dr-btn-danger:focus,
+.dr-default-theme-light a.dr-btn-danger:focus {
+  outline: 1px solid #ff1313;
+  outline-offset: 2px;
+}
+.dr-default-theme-light button.dr-btn.dr-btn-warning,
+.dr-default-theme-light a.dr-btn.dr-btn-warning {
   padding: 0.5rem 1rem;
   cursor: pointer;
   background: #ffab1b;
   color: #ffffff;
 }
-.dr-default-theme-light .dr-btn.dr-btn-warning:hover,
-.dr-default-theme-light .dr-btn-tp.dr-btn-warning:hover {
+.dr-default-theme-light button.dr-btn.dr-btn-warning:hover,
+.dr-default-theme-light a.dr-btn.dr-btn-warning:hover,
+.dr-default-theme-light button.dr-btn-tp.dr-btn-warning:hover,
+.dr-default-theme-light a.dr-btn-tp.dr-btn-warning:hover {
   padding: 0.5rem 1rem;
   cursor: pointer;
   background: #cd8915;
   color: #ffffff;
 }
-.dr-default-theme-light .dr-btn-tp.dr-btn-warning {
+.dr-default-theme-light button.dr-btn-tp.dr-btn-warning a.dr-btn-tp.dr-btn-warning {
   padding: 0.5rem 1rem;
   cursor: pointer;
   background: transparent;
   color: #ffab1b;
   border: 1px solid #ffab1b;
 }
-.dr-default-theme-light .dr-btn.dr-btn-light {
+.dr-default-theme-light button.dr-btn-warning:focus,
+.dr-default-theme-light a.dr-btn-warning:focus {
+  outline: 1px solid #ffab1b;
+  outline-offset: 2px;
+}
+.dr-default-theme-light button.dr-btn.dr-btn-light,
+.dr-default-theme-light a.dr-btn.dr-btn-light {
   padding: 0.5rem 1rem;
   cursor: pointer;
   background: #ffffff;
   color: #000000;
 }
-.dr-default-theme-light .dr-btn.dr-btn-light:hover,
-.dr-default-theme-light .dr-btn-tp.dr-btn-light:hover {
+.dr-default-theme-light button.dr-btn.dr-btn-light:hover,
+.dr-default-theme-light a.dr-btn.dr-btn-light:hover,
+.dr-default-theme-light button.dr-btn-tp.dr-btn-light:hover,
+.dr-default-theme-light a.dr-btn-tp.dr-btn-light:hover {
   padding: 0.5rem 1rem;
   cursor: pointer;
   background: #cecece;
   color: #000000;
 }
-.dr-default-theme-light .dr-btn-tp.dr-btn-light {
+.dr-default-theme-light button.dr-btn-tp.dr-btn-light a.dr-btn-tp.dr-btn-light {
   padding: 0.5rem 1rem;
   cursor: pointer;
   background: transparent;
   color: #ffffff;
   border: 1px solid #ffffff;
 }
-.dr-default-theme-light .dr-btn.dr-btn-dark {
+.dr-default-theme-light button.dr-btn-light:focus,
+.dr-default-theme-light a.dr-btn-light:focus {
+  outline: 1px solid #ffffff;
+  outline-offset: 2px;
+}
+.dr-default-theme-light button.dr-btn.dr-btn-dark,
+.dr-default-theme-light a.dr-btn.dr-btn-dark {
   padding: 0.5rem 1rem;
   cursor: pointer;
   background: #000000;
   color: #ffffff;
 }
-.dr-default-theme-light .dr-btn.dr-btn-dark:hover,
-.dr-default-theme-light .dr-btn-tp.dr-btn-dark:hover {
+.dr-default-theme-light button.dr-btn.dr-btn-dark:hover,
+.dr-default-theme-light a.dr-btn.dr-btn-dark:hover,
+.dr-default-theme-light button.dr-btn-tp.dr-btn-dark:hover,
+.dr-default-theme-light a.dr-btn-tp.dr-btn-dark:hover {
   padding: 0.5rem 1rem;
   cursor: pointer;
   background: #202020;
   color: #ffffff;
 }
-.dr-default-theme-light .dr-btn-tp.dr-btn-dark {
+.dr-default-theme-light button.dr-btn-tp.dr-btn-dark a.dr-btn-tp.dr-btn-dark {
   padding: 0.5rem 1rem;
   cursor: pointer;
   background: transparent;
   color: #000000;
   border: 1px solid #000000;
+}
+.dr-default-theme-light button.dr-btn-dark:focus,
+.dr-default-theme-light a.dr-btn-dark:focus {
+  outline: 1px solid #000000;
+  outline-offset: 2px;
+}
+.dr-default-theme-dark button.dr-btn.dr-btn-primary,
+.dr-default-theme-dark a.dr-btn.dr-btn-primary {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background: #0096FF;
+  color: #000000;
+}
+.dr-default-theme-dark button.dr-btn.dr-btn-primary:hover,
+.dr-default-theme-dark a.dr-btn.dr-btn-primary:hover,
+.dr-default-theme-dark button.dr-btn-tp.dr-btn-primary:hover,
+.dr-default-theme-dark a.dr-btn-tp.dr-btn-primary:hover {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background: #0376c8;
+  color: #000000;
+}
+.dr-default-theme-dark button.dr-btn-tp.dr-btn-primary a.dr-btn-tp.dr-btn-primary {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background: transparent;
+  color: #0096FF;
+  border: 1px solid #0096FF;
+}
+.dr-default-theme-dark button.dr-btn-primary:focus,
+.dr-default-theme-dark a.dr-btn-primary:focus {
+  outline: 1px solid #0096FF;
+  outline-offset: 2px;
+}
+.dr-default-theme-dark button.dr-btn.dr-btn-secondary,
+.dr-default-theme-dark a.dr-btn.dr-btn-secondary {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background: #c2c2c2;
+  color: #000000;
+}
+.dr-default-theme-dark button.dr-btn.dr-btn-secondary:hover,
+.dr-default-theme-dark a.dr-btn.dr-btn-secondary:hover,
+.dr-default-theme-dark button.dr-btn-tp.dr-btn-secondary:hover,
+.dr-default-theme-dark a.dr-btn-tp.dr-btn-secondary:hover {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background: #858585;
+  color: #000000;
+}
+.dr-default-theme-dark button.dr-btn-tp.dr-btn-secondary a.dr-btn-tp.dr-btn-secondary {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background: transparent;
+  color: #c2c2c2;
+  border: 1px solid #c2c2c2;
+}
+.dr-default-theme-dark button.dr-btn-secondary:focus,
+.dr-default-theme-dark a.dr-btn-secondary:focus {
+  outline: 1px solid #c2c2c2;
+  outline-offset: 2px;
+}
+.dr-default-theme-dark button.dr-btn.dr-btn-success,
+.dr-default-theme-dark a.dr-btn.dr-btn-success {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background: #15fc62;
+  color: #000000;
+}
+.dr-default-theme-dark button.dr-btn.dr-btn-success:hover,
+.dr-default-theme-dark a.dr-btn.dr-btn-success:hover,
+.dr-default-theme-dark button.dr-btn-tp.dr-btn-success:hover,
+.dr-default-theme-dark a.dr-btn-tp.dr-btn-success:hover {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background: #11b848;
+  color: #000000;
+}
+.dr-default-theme-dark button.dr-btn-tp.dr-btn-success a.dr-btn-tp.dr-btn-success {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background: transparent;
+  color: #15fc62;
+  border: 1px solid #15fc62;
+}
+.dr-default-theme-dark button.dr-btn-success:focus,
+.dr-default-theme-dark a.dr-btn-success:focus {
+  outline: 1px solid #15fc62;
+  outline-offset: 2px;
+}
+.dr-default-theme-dark button.dr-btn.dr-btn-danger,
+.dr-default-theme-dark a.dr-btn.dr-btn-danger {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background: #ff1313;
+  color: #ffffff;
+}
+.dr-default-theme-dark button.dr-btn.dr-btn-danger:hover,
+.dr-default-theme-dark a.dr-btn.dr-btn-danger:hover,
+.dr-default-theme-dark button.dr-btn-tp.dr-btn-danger:hover,
+.dr-default-theme-dark a.dr-btn-tp.dr-btn-danger:hover {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background: #b10f0f;
+  color: #ffffff;
+}
+.dr-default-theme-dark button.dr-btn-tp.dr-btn-danger a.dr-btn-tp.dr-btn-danger {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background: transparent;
+  color: #ff1313;
+  border: 1px solid #ff1313;
+}
+.dr-default-theme-dark button.dr-btn-danger:focus,
+.dr-default-theme-dark a.dr-btn-danger:focus {
+  outline: 1px solid #ff1313;
+  outline-offset: 2px;
+}
+.dr-default-theme-dark button.dr-btn.dr-btn-warning,
+.dr-default-theme-dark a.dr-btn.dr-btn-warning {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background: #ffab1b;
+  color: #ffffff;
+}
+.dr-default-theme-dark button.dr-btn.dr-btn-warning:hover,
+.dr-default-theme-dark a.dr-btn.dr-btn-warning:hover,
+.dr-default-theme-dark button.dr-btn-tp.dr-btn-warning:hover,
+.dr-default-theme-dark a.dr-btn-tp.dr-btn-warning:hover {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background: #cd8915;
+  color: #ffffff;
+}
+.dr-default-theme-dark button.dr-btn-tp.dr-btn-warning a.dr-btn-tp.dr-btn-warning {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background: transparent;
+  color: #ffab1b;
+  border: 1px solid #ffab1b;
+}
+.dr-default-theme-dark button.dr-btn-warning:focus,
+.dr-default-theme-dark a.dr-btn-warning:focus {
+  outline: 1px solid #ffab1b;
+  outline-offset: 2px;
+}
+.dr-default-theme-dark button.dr-btn.dr-btn-light,
+.dr-default-theme-dark a.dr-btn.dr-btn-light {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background: #ffffff;
+  color: #000000;
+}
+.dr-default-theme-dark button.dr-btn.dr-btn-light:hover,
+.dr-default-theme-dark a.dr-btn.dr-btn-light:hover,
+.dr-default-theme-dark button.dr-btn-tp.dr-btn-light:hover,
+.dr-default-theme-dark a.dr-btn-tp.dr-btn-light:hover {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background: #cecece;
+  color: #000000;
+}
+.dr-default-theme-dark button.dr-btn-tp.dr-btn-light a.dr-btn-tp.dr-btn-light {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+.dr-default-theme-dark button.dr-btn-light:focus,
+.dr-default-theme-dark a.dr-btn-light:focus {
+  outline: 1px solid #ffffff;
+  outline-offset: 2px;
+}
+.dr-default-theme-dark button.dr-btn.dr-btn-dark,
+.dr-default-theme-dark a.dr-btn.dr-btn-dark {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background: #000000;
+  color: #ffffff;
+}
+.dr-default-theme-dark button.dr-btn.dr-btn-dark:hover,
+.dr-default-theme-dark a.dr-btn.dr-btn-dark:hover,
+.dr-default-theme-dark button.dr-btn-tp.dr-btn-dark:hover,
+.dr-default-theme-dark a.dr-btn-tp.dr-btn-dark:hover {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background: #202020;
+  color: #ffffff;
+}
+.dr-default-theme-dark button.dr-btn-tp.dr-btn-dark a.dr-btn-tp.dr-btn-dark {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background: transparent;
+  color: #000000;
+  border: 1px solid #000000;
+}
+.dr-default-theme-dark button.dr-btn-dark:focus,
+.dr-default-theme-dark a.dr-btn-dark:focus {
+  outline: 1px solid #000000;
+  outline-offset: 2px;
 }
 
 /*# sourceMappingURL=style.css.map */

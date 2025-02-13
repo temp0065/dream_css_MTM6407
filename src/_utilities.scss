@@ -1,5 +1,7 @@
 @use "spacing";
 @use "variables";
+@use "functions";
+@use "sass:map";
 
 // Classes for rounded corners
 @each $size, $br in variables.$rounded-corners {
@@ -26,5 +28,18 @@
 @each $amount, $opacity in variables.$opacity {
     .dr-o-#{$amount} {
         opacity: $opacity;
+    }
+}
+
+// Class for background color
+@each $theme-name, $theme-values in variables.$themes {
+    .dr-#{$theme-name} {
+        @each $type, $color in $theme-values {
+            @if functions.is-map($color) {
+                .dr-bg-#{$type} {
+                    background: map.get($color, "color");
+                }
+            }
+        }
     }
 }

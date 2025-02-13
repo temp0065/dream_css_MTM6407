@@ -61,9 +61,7 @@ p {
 // Sets font color
 @each $theme-name, $theme-values in variables.$themes {
     .dr-#{$theme-name} {
-        body {
-            color: map.get($theme-values, "text-main");
-        }
+        color: map.get($theme-values, "text-main");
 
         @each $type, $color in $theme-values {
             @if functions.is-map($color) {
