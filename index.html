@@ -14,11 +14,11 @@
         <p class="dr-my-xl dr-container-sm">Dream CSS is a lightweight, modern CSS framework designed to provide a clean and responsive foundation for web development. It offers a minimalist approach with customizable components, intuitive styling, and seamless integration with any project. This framework was written and styled by Nathan Templeton, Dominic Corriveau, Alex Galsytan, and Matthew Montgomery, aiming to simplify front-end design while maintaining flexibility and performance.</p>
       </header>
 
-      <main class="dr-px-md dr-py-sm">
+      <main class="dr-px-md dr-py-sm dr-flex dr-flex-column dr-g-xxl">
         <section class="dr-py-md">
           <h2>Headings, Paragraphs, and Lists:</h2>
           <h3>Headings and Paragraphs:</h3>
-          <div>
+          <div class="dr-flex dr-flex-column dr-g-md">
             <p class="dr-h1">Heading 1</p>
             <p class="dr-h2">Heading 2</p>
             <p class="dr-h3">Heading 3</p>
@@ -29,34 +29,44 @@
           <div>
               <p>This is what a paragraph would look like using the dream CSS library.</p>
           </div>
-          <h3>Lists</h3>
-              <h4>Unordered list:</h4>
-              <ul>
-                  <li>Unordered list item</li>
-                  <li>Unordered list item</li>
-                  <li>Unordered list item</li>
-              </ul>
-              <h4>Ordered list:</h4>
-              <ol>
-                  <li>Ordered list item</li>
-                  <li>Ordered list item</li>
-                  <li>Ordered list item</li>
-              </ol>
-              <h4>Description list:</h4>
-              <dl>
-                  <dt>DreamCSS</dt>
-                  <dd>An amazing CSS framework</dd>
-                  <dt>Nathan, Dominic, Alex, Matthew</dt>
-                  <dd>A group of amazing developers</dd>
-              </dl>
+          <article>
+            <h3>Lists</h3>
+              <div class="dr-flex">
+                <div>
+                  <h4>Unordered list:</h4>
+                  <ul>
+                      <li>Unordered list item</li>
+                      <li>Unordered list item</li>
+                      <li>Unordered list item</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4>Ordered list:</h4>
+                    <ol>
+                        <li>Ordered list item</li>
+                        <li>Ordered list item</li>
+                        <li>Ordered list item</li>
+                    </ol>
+                </div>
+                <div>
+                  <h4>Description list:</h4>
+                  <dl>
+                      <dt>DreamCSS</dt>
+                      <dd>An amazing CSS framework</dd>
+                      <dt>Nathan, Dominic, Alex, Matthew</dt>
+                      <dd>A group of amazing developers</dd>
+                  </dl>
+                </div>
+              </div>
+          </article>
       </section>
   
         <!-- BUTTONS -->
-        <section class="dr-ml-xxl">
-          <h4 class="dr-mb-md">Buttons:</h4>
+        <section>
+          <h2 class="dr-mb-md">Buttons:</h2>
           <article>
             <h3>Regular Buttons</h3>
-            <div class="dr-flex dr-g-md">
+            <div class="dr-py-md dr-flex dr-g-md">
               <button type="button" class="dr-btn dr-btn-primary">Primary</button>
               <button type="button" class="dr-btn dr-btn-secondary">Secondary</button>
               <button type="button" class="dr-btn dr-btn-info">Info</button>
@@ -70,7 +80,7 @@
 
           <article>
             <h3>Transparent Buttons</h3>
-            <div class="dr-flex dr-g-md">
+            <div class="dr-py-md dr-flex dr-g-md">
               <button type="button" class="dr-btn-tp dr-btn-primary">Primary</button>
               <button type="button" class="dr-btn-tp dr-btn-secondary">Secondary</button>
               <button type="button" class="dr-btn-tp dr-btn-info">Info</button>
@@ -83,10 +93,9 @@
           </article>
         </section>
 
-        <section class="dr-ml-xxl">
-          <h4 class="dr-mb-md">Links:</h4>
+        <section>
+          <h2 class="dr-mb-sm">Links:</h2>
           <article>
-            <h3>Links</h3>
             <div class="dr-flex dr-g-md">
               <a href="#" class="dr-fc-primary">Primary</a>
               <a href="#" class="dr-fc-secondary">Secondary</a>
@@ -95,22 +104,29 @@
               <a href="#" class="dr-fc-warning">Warning</a>
               <a href="#" class="dr-fc-danger">Danger</a>
               <a href="#" class="dr-fc-light">Light</a>
-              <a href="#" class="dr-fc-dark">Dark</a><a href=""></a>
+              <a href="#" class="dr-fc-dark">Dark</a>
             </div>
           </article>
 
           <article>
-            <div>
-              <h3>Button Links</h3>
+            <h3>Button Links</h3>
+            <div class="dr-flex dr-g-md">
               <a href="#" role="button" class="dr-btn dr-btn-primary">Primary</a>
+              <a href="#" role="button" class="dr-btn dr-btn-secondary">Secondary</a>
+              <a href="#" role="button" class="dr-btn dr-btn-info">Info</a>
+              <a href="#" role="button" class="dr-btn dr-btn-success">Success</a>
+              <a href="#" role="button" class="dr-btn dr-btn-warning">Warning</a>
+              <a href="#" role="button" class="dr-btn dr-btn-danger">Danger</a>
+              <a href="#" role="button" class="dr-btn dr-btn-light">Light</a>
+              <a href="#" role="button" class="dr-btn dr-btn-dark">Dark</a>
             </div>
           </article>
         </section>
   
         <!-- TABLE -->
-        <section class="dr-ml-xxl dr-container-sm">
-          <h4 class="dr-my-xxl">Table:</h4>
-          <table class="dr-table dr-mb-lg">
+        <section>
+          <h2>Table:</h2>
+          <table class="dr-table">
             <thead>
               <tr>
                 <th>Name</th>
@@ -144,8 +160,8 @@
         </section>
   
         <!-- FORM -->
-        <section class="dr-ml-xxl dr-container-sm">
-          <h4 class="dr-my-xl">Form:</h4>
+        <section>
+          <h2>Form:</h2>
           <form>
             <!-- text fields -->
             <div class="form-group">
@@ -189,14 +205,16 @@
           </form>
         </section>
 
-        <div>
+        <section>
           <h3>Animations</h3>
           <p>You can use our preset float and fade in animations for hovers. You can also set different lengths for them.</p>
-          <button class="dr-btn dr-btn-primary dr-v-float">Float 1</button>
-          <button class="dr-btn dr-btn-dark dr-float">Float 2</button>
-          <button class="dr-btn dr-btn-info f1preview">Fade In 1</button>
-          <button class="dr-btn dr-btn-success f2preview">Fade In 2</button>
-        </div>
+          <div class="dr-flex dr-g-md">
+            <button class="dr-btn dr-btn-primary dr-v-float">Float 1</button>
+            <button class="dr-btn dr-btn-dark dr-float">Float 2</button>
+            <button class="dr-btn dr-btn-info f1preview">Fade In 1 (Click)</button>
+            <button class="dr-btn dr-btn-success f2preview">Fade In 2 (Click)</button>
+          </div>
+        </section>
       </main>
     </div>
   </body>

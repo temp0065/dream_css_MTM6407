@@ -55,8 +55,10 @@ a {
     @include link;
 }
 
-a:hover {
-    opacity: map.get(variables.$opacity, "hf");
+@media (hover: hover) {
+    a:hover {
+        opacity: map.get(variables.$opacity, "hf");
+    }
 }
 
 // Tables

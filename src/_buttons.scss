@@ -7,6 +7,7 @@
     cursor: pointer;
     border-radius: map.get(variables.$rounded-corners, "sm");
     transition: map.get(variables.$transition-length, "sm");
+    opacity: 1;
 
     background: $bg-color;
     color: $txt-color;
@@ -52,7 +53,7 @@ a.dr-btn-tp {
     button.dr-btn-tp.dr-btn-#{$type},
     a.dr-btn-tp.dr-btn-#{$type} {
         @if functions.is-map($color) {
-            @include dr-btn($txt-color: map.get($color, "color"), $border: map.get(variables.$border-width, "xsm"), $border-color: map.get($color, "color"));
+            @include dr-btn($txt-color: map.get($color, "link"), $border: map.get(variables.$border-width, "xsm"), $border-color: map.get($color, "link"));
         }
     }
 
@@ -91,7 +92,7 @@ a.dr-btn-tp {
             button.dr-btn-tp.dr-btn-#{$type},
             a.dr-btn-tp.dr-btn-#{$type} {
                 @if functions.is-map($color) {
-                    @include dr-btn($txt-color: map.get($color, "color"), $border: map.get(variables.$border-width, "xsm"), $border-color: map.get($color, "color"));
+                    @include dr-btn($txt-color: map.get($color, "link"), $border: map.get(variables.$border-width, "xsm"), $border-color: map.get($color, "link"));
                 }
             }
 
