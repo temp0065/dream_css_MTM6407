@@ -4,37 +4,50 @@ $themes: (
         "primary": (
                 "color": #0096FF,
                 "hover": #0376c8,
-                "text": #000000
+                "text": #000000,
+                "link": #014c81
         ),
         "secondary": (
                 "color": #c2c2c2,
                 "hover": #858585,
-                "text": #000000
+                "text": #000000,
+                "link": #505050
         ),
         "success": (
                 "color": #15fc62,
                 "hover": #11b848,
-                "text": #000000
+                "text": #000000,
+                "link": #0f993d
         ),
         "danger": (
                 "color": #ff1313,
                 "hover": #b10f0f,
-                "text": #ffffff
+                "text": #ffffff,
+                "link": #970d0d
         ),
         "warning": (
             "color": #ffab1b,
             "hover": #cd8915,
-            "text": #ffffff
+            "text": #000000,
+            "link": #956513
+        ),
+        "info": (
+            "color": #1bfff7,
+            "hover": #1ad2cb,
+            "text": #000000,
+            "link": #149e9a
         ),
         "light": (
             "color": #ffffff,
             "hover": #cecece,
-            "text": #000000
+            "text": #000000,
+            "link": #d0d0d0
         ),
         "dark": (
             "color": #000000,
-            "hover": #202020,
-            "text": #ffffff
+            "hover": #3c3c3c,
+            "text": #ffffff,
+            "link": #000000
         ),
         "text-main": #000,
         "main-bg": #ffffff
@@ -43,37 +56,50 @@ $themes: (
         "primary": (
                 "color": #0096FF,
                 "hover": #0376c8,
-                "text": #000000
+                "text": #000000,
+                "link": #0095ff
         ),
         "secondary": (
                 "color": #c2c2c2,
                 "hover": #858585,
-                "text": #000000
+                "text": #000000,
+                "link": #b3b3b3
         ),
         "success": (
                 "color": #15fc62,
                 "hover": #11b848,
-                "text": #000000
+                "text": #000000,
+                "link": #1cff68
         ),
         "danger": (
                 "color": #ff1313,
                 "hover": #b10f0f,
-                "text": #ffffff
+                "text": #ffffff,
+                "link": #ff1515
         ),
         "warning": (
             "color": #ffab1b,
             "hover": #cd8915,
-            "text": #ffffff
+            "text": #000000,
+            "link": #ffae22
+        ),
+        "info": (
+            "color": #1bfff7,
+            "hover": #1ad2cb,
+            "text": #000000,
+            "link": #1efdf5
         ),
         "light": (
             "color": #ffffff,
             "hover": #cecece,
-            "text": #000000
+            "text": #000000,
+            "link": #ffffff
         ),
         "dark": (
             "color": #000000,
-            "hover": #202020,
-            "text": #ffffff
+            "hover": #3c3c3c,
+            "text": #ffffff,
+            "link": #000000
         ),
         "text-main": #ffffff,
         "main-bg": #000000
@@ -121,7 +147,7 @@ $padding-sizes: (
     "md": 1rem,
     "lg": 1.5rem,
     "xl": 2rem,
-    "pxxl": 2.5rem
+    "xxl": 2.5rem
 );
 
 // Margins
@@ -196,4 +222,15 @@ $transition-length: (
     "lg": 0.5s,
     "xl": 0.75s,
     "xxl": 1s
+);
+
+// Grids
+$grid-columns: (
+    1: 1,
+    2: 2,
+    3: 3,
+    4: 4,
+    5: 5,
+    6: 6,
+    12: 12
 );

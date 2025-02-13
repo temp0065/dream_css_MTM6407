@@ -7,128 +7,197 @@
     <title>DreamCSS Example Page</title>
   </head>
   <body>
-    <main>
+    <div class="dr-container-md dr-center">
       <!-- TITLE & DESCRIPTION -->
-      <header class="dr-ml-xxl">
-        <h1 class="dr-mb-lg dr-mt-lg">Welcome to Dream CSS.</h1>
+      <header class="dr-p-md dr-bg-primary">
+        <h1 class="dr-mb-lg">Welcome to Dream CSS.</h1>
         <p class="dr-my-xl dr-container-sm">Dream CSS is a lightweight, modern CSS framework designed to provide a clean and responsive foundation for web development. It offers a minimalist approach with customizable components, intuitive styling, and seamless integration with any project. This framework was written and styled by Nathan Templeton, Dominic Corriveau, Alex Galsytan, and Matthew Montgomery, aiming to simplify front-end design while maintaining flexibility and performance.</p>
       </header>
 
-      <!-- HEADINGS & PARAGRAPHS -->
-      <section class="dr-ml-xxl">
-        <h4 class="dr-mt-xxl">Headings and Paragraphs:</h4>
-        <h1>h1</h1>
-        <h2>h2</h2>
-        <h3>h3</h3>
-        <h4 class="dr-mb-lg">h4</h4>
-        <p>This is what a paragraph looks like using the dream css library.</p>
-      </section>
-
-      <!-- LISTS -->
-      <section class="dr-ml-xxl dr-my-xxl">
-        <h4>Unordered List:</h4>
-        <ul>
-          <li>Unordered list item</li>
-          <li>Unordered list item</li>
-          <li>Unordered list item</li>
-        </ul>
-        <h4>Ordered List:</h4>
-        <ol>
-          <li>Ordered list item</li>
-          <li>Ordered list item</li>
-          <li>Ordered list item</li>
-        </ol>
-      </section>
-
-      <!-- BUTTONS -->
-      <section class="dr-ml-xxl">
-        <h4 class="dr-mb-md">Buttons:</h4>
-        <button type="button">Success</button>
-        <button type="button">Warning</button>
-        <button type="button">Danger</button>
-      </section>
-
-      <!-- TABLE -->
-      <section class="dr-ml-xxl dr-container-sm">
-        <h4 class="dr-my-xxl">Table:</h4>
-        <table class="dr-table dr-mb-lg">
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Age</th>
-              <th>Country</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Matthew</td>
-              <td>24</td>
-              <td>Canada</td>
-            </tr>
-            <tr>
-              <td>Nathan</td>
-              <td>??</td>
-              <td>??</td>
-            </tr>
-            <tr>
-              <td>Alex</td>
-              <td>??</td>
-              <td>??</td>
-            </tr>
-            <tr>
-              <td>Dominic</td>
-              <td>??</td>
-              <td>??</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-
-      <!-- FORM -->
-      <section class="dr-ml-xxl dr-container-sm">
-        <h4 class="dr-my-xl">Form:</h4>
-        <form>
-          <!-- text fields -->
-          <div class="form-group">
-            <label for="name">Full Name</label>
-            <input type="text" id="name" name="name" placeholder="Enter your name">
+      <main class="dr-px-md dr-py-sm">
+        <section class="dr-py-md">
+          <h2>Headings, Paragraphs, and Lists:</h2>
+          <h3>Headings and Paragraphs:</h3>
+          <div>
+            <p class="dr-h1">Heading 1</p>
+            <p class="dr-h2">Heading 2</p>
+            <p class="dr-h3">Heading 3</p>
+            <p class="dr-h4">Heading 4</p>
+            <p class="dr-h5">Heading 5</p>
+            <p class="dr-h6">Heading 6</p>
           </div>
-          <div class="form-group">
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email">
+          <div>
+              <p>This is what a paragraph would look like using the dream CSS library.</p>
           </div>
-          <div class="form-group">
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" placeholder="Enter your password">
-          </div>
-          <!-- radio buttons -->
-          <div class="form-group">
-            <label>Gender</label>
-            <div class="form-group-inline">
-              <input type="radio" id="male" name="gender" value="male">
-              <label for="male">Male</label>
-              <input type="radio" id="female" name="gender" value="female">
-              <label for="female">Female</label>
+          <h3>Lists</h3>
+              <h4>Unordered list:</h4>
+              <ul>
+                  <li>Unordered list item</li>
+                  <li>Unordered list item</li>
+                  <li>Unordered list item</li>
+              </ul>
+              <h4>Ordered list:</h4>
+              <ol>
+                  <li>Ordered list item</li>
+                  <li>Ordered list item</li>
+                  <li>Ordered list item</li>
+              </ol>
+              <h4>Description list:</h4>
+              <dl>
+                  <dt>DreamCSS</dt>
+                  <dd>An amazing CSS framework</dd>
+                  <dt>Nathan, Dominic, Alex, Matthew</dt>
+                  <dd>A group of amazing developers</dd>
+              </dl>
+      </section>
+  
+        <!-- BUTTONS -->
+        <section class="dr-ml-xxl">
+          <h4 class="dr-mb-md">Buttons:</h4>
+          <article>
+            <h3>Regular Buttons</h3>
+            <div class="dr-flex dr-g-md">
+              <button type="button" class="dr-btn dr-btn-primary">Primary</button>
+              <button type="button" class="dr-btn dr-btn-secondary">Secondary</button>
+              <button type="button" class="dr-btn dr-btn-info">Info</button>
+              <button type="button" class="dr-btn dr-btn-success">Success</button>
+              <button type="button" class="dr-btn dr-btn-warning">Warning</button>
+              <button type="button" class="dr-btn dr-btn-danger">Danger</button>
+              <button type="button" class="dr-btn dr-btn-light">Light</button>
+              <button type="button" class="dr-btn dr-btn-dark">Dark</button>
             </div>
-          </div>
-          <!-- checkboxes -->
-          <div class="form-group">
-            <label>Interests</label>
-            <div class="form-group-inline">
-              <input type="checkbox" id="coding" name="interests" value="coding">
-              <label for="coding">Coding</label>
-              <input type="checkbox" id="gaming" name="interests" value="gaming">
-              <label for="gaming">Gaming</label>
-              <input type="checkbox" id="sports" name="interests" value="sports">
-              <label for="sports">Sports</label>
+          </article>
+
+          <article>
+            <h3>Transparent Buttons</h3>
+            <div class="dr-flex dr-g-md">
+              <button type="button" class="dr-btn-tp dr-btn-primary">Primary</button>
+              <button type="button" class="dr-btn-tp dr-btn-secondary">Secondary</button>
+              <button type="button" class="dr-btn-tp dr-btn-info">Info</button>
+              <button type="button" class="dr-btn-tp dr-btn-success">Success</button>
+              <button type="button" class="dr-btn-tp dr-btn-warning">Warning</button>
+              <button type="button" class="dr-btn-tp dr-btn-danger">Danger</button>
+              <button type="button" class="dr-btn-tp dr-btn-light">Light</button>
+              <button type="button" class="dr-btn-tp dr-btn-dark">Dark</button>
             </div>
-          </div>
-          <!-- submit button -->
-          <div class="form-group">
-            <button type="submit" class="submit-btn">SUBMIT</button>
-          </div>
-        </form>
-      </section>
-    </main>
+          </article>
+        </section>
+
+        <section class="dr-ml-xxl">
+          <h4 class="dr-mb-md">Links:</h4>
+          <article>
+            <h3>Links</h3>
+            <div class="dr-flex dr-g-md">
+              <a href="#" class="dr-fc-primary">Primary</a>
+              <a href="#" class="dr-fc-secondary">Secondary</a>
+              <a href="#" class="dr-fc-info">Info</a>
+              <a href="#" class="dr-fc-success">Success</a>
+              <a href="#" class="dr-fc-warning">Warning</a>
+              <a href="#" class="dr-fc-danger">Danger</a>
+              <a href="#" class="dr-fc-light">Light</a>
+              <a href="#" class="dr-fc-dark">Dark</a><a href=""></a>
+            </div>
+          </article>
+
+          <article>
+            <div>
+              <h3>Button Links</h3>
+              <a href="#" role="button" class="dr-btn dr-btn-primary">Primary</a>
+            </div>
+          </article>
+        </section>
+  
+        <!-- TABLE -->
+        <section class="dr-ml-xxl dr-container-sm">
+          <h4 class="dr-my-xxl">Table:</h4>
+          <table class="dr-table dr-mb-lg">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Country</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Matthew</td>
+                <td>24</td>
+                <td>Canada</td>
+              </tr>
+              <tr>
+                <td>Nathan</td>
+                <td>??</td>
+                <td>??</td>
+              </tr>
+              <tr>
+                <td>Alex</td>
+                <td>??</td>
+                <td>??</td>
+              </tr>
+              <tr>
+                <td>Dominic</td>
+                <td>??</td>
+                <td>??</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+  
+        <!-- FORM -->
+        <section class="dr-ml-xxl dr-container-sm">
+          <h4 class="dr-my-xl">Form:</h4>
+          <form>
+            <!-- text fields -->
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" placeholder="Enter your password">
+            </div>
+            <!-- radio buttons -->
+            <div class="form-group">
+              <label>Gender</label>
+              <div class="form-group-inline">
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+              </div>
+            </div>
+            <!-- checkboxes -->
+            <div class="form-group">
+              <label>Interests</label>
+              <div class="form-group-inline">
+                <input type="checkbox" id="coding" name="interests" value="coding">
+                <label for="coding">Coding</label>
+                <input type="checkbox" id="gaming" name="interests" value="gaming">
+                <label for="gaming">Gaming</label>
+                <input type="checkbox" id="sports" name="interests" value="sports">
+                <label for="sports">Sports</label>
+              </div>
+            </div>
+            <!-- submit button -->
+            <div class="form-group">
+              <button type="submit" class="dr-btn dr-btn-secondary">Submit</button>
+            </div>
+          </form>
+        </section>
+
+        <div>
+          <h3>Animations</h3>
+          <p>You can use our preset float and fade in animations for hovers. You can also set different lengths for them.</p>
+          <button class="dr-btn dr-btn-primary dr-v-float">Float 1</button>
+          <button class="dr-btn dr-btn-dark dr-float">Float 2</button>
+          <button class="dr-btn dr-btn-info f1preview">Fade In 1</button>
+          <button class="dr-btn dr-btn-success f2preview">Fade In 2</button>
+        </div>
+      </main>
+    </div>
   </body>
 </html>

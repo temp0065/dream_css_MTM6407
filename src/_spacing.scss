@@ -10,14 +10,16 @@
 /* Padding on x-axis */
 @each $size, $padding in variables.$padding-sizes {
     .dr-px-#{$size} {
-        padding: 0 $padding;
+        padding-left: $padding;
+        padding-right: $padding;
     }
 }
 
 /* Padding on y-axis */
 @each $size, $padding in variables.$padding-sizes {
     .dr-py-#{$size} {
-        padding: $padding 0;
+        padding-top: $padding;
+        padding-bottom: $padding;
     }
 }
 

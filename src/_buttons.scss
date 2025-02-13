@@ -2,30 +2,74 @@
 @use "functions";
 @use "sass:map";
 
-@mixin dr-btn($bg-color: transparent, $txt-color: #000, $border: none) {
+@mixin dr-btn($bg-color: transparent, $txt-color: map.get(map.get(variables.$themes, "default-theme-light"), "text-main"), $border: none, $border-color: transparent) {
     padding: map.get(variables.$padding-sizes, "sm") map.get(variables.$padding-sizes, "md");
     cursor: pointer;
+    border-radius: map.get(variables.$rounded-corners, "sm");
+    transition: map.get(variables.$transition-length, "sm");
 
     background: $bg-color;
     color: $txt-color;
     @if $border != none {
-        border: map.get(variables.$border-width, "xsm") solid $border;
+        border: $border solid $border-color;
     }
 }
 
 button.dr-btn,
 a.dr-btn {
     @include dr-btn;
-    border-radius: map.get(variables.$rounded-corners, "sm");
 }
 
 a.dr-btn {
     text-decoration: none;
 }
 
+button.dr-btn-tp,
+a.dr-btn-tp {
+    @include dr-btn($border: map.get(variables.$border-width, "xsm"), $border-color: map.get(map.get(variables.$themes, "default-theme-light"), "text-main"));
+}
+
+// When no theme is specified
+@each $type, $color in map.get(variables.$themes, "default-theme-light") {
+    button.dr-btn.dr-btn-#{$type},
+    a.dr-btn.dr-btn-#{$type} {
+        @if functions.is-map($color) {
+            @include dr-btn($bg-color: map.get($color, "color"), $txt-color: map.get($color, "text"));
+        }
+    }
+
+    @media (hover: hover) {
+        button.dr-btn.dr-btn-#{$type}:hover,
+        a.dr-btn.dr-btn-#{$type}:hover,
+        button.dr-btn-tp.dr-btn-#{$type}:hover, 
+        a.dr-btn-tp.dr-btn-#{$type}:hover {
+            @if functions.is-map($color) {
+                @include dr-btn($bg-color: map.get($color, "hover"), $txt-color: map.get($color, "text"));
+            }
+        }
+    }
+
+    button.dr-btn-tp.dr-btn-#{$type},
+    a.dr-btn-tp.dr-btn-#{$type} {
+        @if functions.is-map($color) {
+            @include dr-btn($txt-color: map.get($color, "color"), $border: map.get(variables.$border-width, "xsm"), $border-color: map.get($color, "color"));
+        }
+    }
+
+    button.dr-btn-#{$type}:focus,
+    a.dr-btn-#{$type}:focus {
+        @if functions.is-map($color) {
+            outline: map.get(variables.$border-width, "sm") solid map.get($color, "color");
+            outline-offset: 2px;
+        }
+    }
+}
+
+// When a theme is specified
 @each $theme-name, $theme-values in variables.$themes {
     .dr-#{$theme-name} {
         @each $type, $color in $theme-values {
+
             button.dr-btn.dr-btn-#{$type},
             a.dr-btn.dr-btn-#{$type} {
                 @if functions.is-map($color) {
@@ -33,19 +77,21 @@ a.dr-btn {
                 }
             }
 
-            button.dr-btn.dr-btn-#{$type}:hover,
-            a.dr-btn.dr-btn-#{$type}:hover,
-            button.dr-btn-tp.dr-btn-#{$type}:hover, 
-            a.dr-btn-tp.dr-btn-#{$type}:hover {
-                @if functions.is-map($color) {
-                    @include dr-btn($bg-color: map.get($color, "hover"), $txt-color: map.get($color, "text"));
+            @media (hover: hover) {
+                button.dr-btn.dr-btn-#{$type}:hover,
+                a.dr-btn.dr-btn-#{$type}:hover,
+                button.dr-btn-tp.dr-btn-#{$type}:hover, 
+                a.dr-btn-tp.dr-btn-#{$type}:hover {
+                    @if functions.is-map($color) {
+                        @include dr-btn($bg-color: map.get($color, "hover"), $txt-color: map.get($color, "text"));
+                    }
                 }
             }
 
-            button.dr-btn-tp.dr-btn-#{$type}
+            button.dr-btn-tp.dr-btn-#{$type},
             a.dr-btn-tp.dr-btn-#{$type} {
                 @if functions.is-map($color) {
-                    @include dr-btn($txt-color: map.get($color, "color"), $border: map.get($color, "color"));
+                    @include dr-btn($txt-color: map.get($color, "color"), $border: map.get(variables.$border-width, "xsm"), $border-color: map.get($color, "color"));
                 }
             }
 

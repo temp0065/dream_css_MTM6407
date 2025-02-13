@@ -85,3 +85,22 @@
         gap: $gap;
     }
 }
+
+// Gaps
+@each $sizes, $gap in variables.$gaps {
+    .dr-g-#{$sizes} {
+        gap: $gap;
+    }
+}
+
+// Grid Container
+.dr-grid {
+    display: grid;
+}
+
+// Grid Columns
+@each $size, $value in variables.$grid-columns {
+    .dr-grid-cols-#{$size} {
+        grid-template-columns: repeat($value, 1fr);
+    }
+}

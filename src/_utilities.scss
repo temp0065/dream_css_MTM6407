@@ -32,12 +32,24 @@
 }
 
 // Class for background color
+// If no theme is specified
+@each $color, $values in map.get(variables.$themes, "default-theme-light") {
+    @if functions.is-map($values) {
+        .dr-bg-#{$color} {
+            background: map.get($values, "color");
+            color: map.get($values, "text");
+        }
+    }
+}
+
+// If a theme is specified
 @each $theme-name, $theme-values in variables.$themes {
     .dr-#{$theme-name} {
         @each $type, $color in $theme-values {
             @if functions.is-map($color) {
                 .dr-bg-#{$type} {
                     background: map.get($color, "color");
+                    color: map.get($color, "text");
                 }
             }
         }
