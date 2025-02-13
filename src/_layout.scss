@@ -1,0 +1,85 @@
+@use "variables";
+@use "sass:map";
+
+/* Containers */
+@each $size, $width in variables.$breakpoints {
+    .dr-container-#{$size} {
+        max-width: $width;
+    }
+}
+
+.dr-container-fluid {
+    max-width: 100%;
+}
+
+// Layout
+.dr-center {
+    margin: 0 auto;
+}
+
+// Flexbox
+.dr-flex {
+    display: flex;
+}
+.dr-flex-row {
+    flex-direction: row;
+}
+.dr-flex-row-r {
+    flex-direction: row-reverse;
+}
+.dr-flex-column {
+    flex-direction: column;
+}
+.dr-flex-column-r {
+    flex-direction: column-reverse;
+}
+
+/* Justify Content */
+.dr-justify-content-start {
+    justify-content: start;
+}
+.dr-justify-content-center {
+    justify-content: center;
+}
+.dr-justify-content-end {
+    justify-content: end;
+}
+.dr-justify-content-start {
+    justify-content: start;
+}
+.dr-justify-content-between {
+    justify-content: space-between;
+}
+.dr-justify-content-evenly {
+    justify-content: space-evenly;
+}
+.dr-justify-content-around {
+    justify-content: space-around;
+}
+
+// Gaps
+@each $sizes, $gap in variables.$gaps {
+    .dr-g-#{$sizes} {
+        gap: $gap;
+    }
+}
+
+// Grid Container
+.dr-grid {
+    display: grid;
+    gap: variables.$grid-gap;
+}
+
+// Grid Columns
+@each $size, $value in variables.$grid-columns {
+    .dr-grid-cols-#{$size} {
+        grid-template-columns: repeat($value, 1fr);
+    }
+}
+
+// Grid Gaps
+@each $size, $value in variables.$grid-gaps {
+    .dr-gap-#{$size} {
+        gap: $value;
+    }
+}
