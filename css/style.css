@@ -237,6 +237,26 @@ button {
   transition: 0.3s ease-in;
 }
 
+.dr-static {
+  animation: unset;
+}
+
+.dr-anim-long {
+  animation-duration: 1s;
+}
+
+.dr-anim-quick {
+  animation-duration: 0.1s;
+}
+
+.f1preview:focus {
+  animation: scalein 0.3s ease-in-out;
+}
+
+.f2preview:focus {
+  animation: popout 0.5s ease-out;
+}
+
 /* Padding all around */
 .dr-p-n {
   padding: 0;
