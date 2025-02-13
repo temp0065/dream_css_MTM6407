@@ -1,5 +1,22 @@
 @use "variables";
+@use "functions";
 @use "sass:map";
+
+// Base styles
+.dr-n-und {
+    text-decoration: none;
+}
+
+.dr-und {
+    text-decoration: underline;
+}
+
+// Sets base page color for theme
+@each $theme-name, $theme-values in variables.$themes {
+    .dr-#{$theme-name} {
+        background: map.get($theme-values, "main-bg");
+    }
+}
 
 // Lists
 ul {
@@ -12,7 +29,129 @@ ol {
     list-style-position: inside; 
 }
 
-ul, ol {
+dl > dt {
+    font-weight: map.get(variables.$font-weights, "sb");
+    font-size: map.get(variables.$font-sizes, "sm") * 1.313;
+}
+
+dl > dd {
+    margin-left: map.get(variables.$margin-sizes, "lg");
+}
+
+ul, ol, dl {
     padding-left: map.get(variables.$padding-sizes, "md");
-    margin: map.get(variables.$margin-sizes, "md");
+    margin: map.get(variables.$margin-sizes, "sm");
+}
+
+// Links
+
+@mixin link($color: map.get(map.get(map.get(variables.$themes, "default-theme-light"), "primary"), "color"), $decoration:underline) {
+    color: $color;
+    text-decoration: $decoration;
+    transition: map.get(variables.$transition-length, "sm") ease-out;
+}
+
+a {
+    @include link;
+}
+
+@media (hover: hover) {
+    a:hover {
+        opacity: map.get(variables.$opacity, "hf");
+    }
+}
+
+// Tables
+/* Table Styles */
+.dr-table {
+    $default-theme-map: map.get(variables.$themes, "default-theme-light");
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+
+    /* Table Header */
+    thead {
+        background-color: map.get(map.get($default-theme-map, "dark"), "color");
+        color: map.get(map.get($default-theme-map, "dark"), "text");
+        text-transform: uppercase;
+    }
+
+    th {
+        padding: map.get(variables.$padding-sizes, "sm");
+        text-align: center;
+        font-weight: map.get(variables.$font-weights, "b");
+    }
+
+    tbody {
+        tr {
+            border-bottom: map.get(variables.$border-width, "xsm") solid #ddd;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+    }
+
+    td {
+        padding: 12px 16px;
+        text-align: center;
+    }
+
+    td {
+        padding: 12px 16px;
+        text-align: center;
+    }
+  }
+
+/* Form Styling */
+form {
+    max-width: 500px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: map.get(variables.$rounded-corners, "xsm");
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: map.get(variables.$margin-sizes, "md");
+}
+
+/* Labels */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: black;
+}
+
+/* Radio and Checkbox Styling */
+.form-group-inline {
+    display: block;
+    gap: 15px;
+}
+
+/* Regular text for radio and checkbox labels */
+.form-group-inline label {
+    font-weight: normal;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+/* Input Fields */
+input[type="text"], 
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: map.get(variables.$padding-sizes, "sm");
+    border: 1px solid #ccc;
+    border-radius: map.get(variables.$rounded-corners, "xsm");
+    box-sizing: border-box;
+    background: #fff;
+}
+
+/* Placeholder Styling */
+input::placeholder, 
+textarea::placeholder {
+    color: rgba(0, 0, 0, 0.5);
 }

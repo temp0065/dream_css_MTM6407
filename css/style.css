@@ -91,6 +91,22 @@ meter {
 /***
     End of CSS reset
 ***/
+.dr-n-und {
+  text-decoration: none;
+}
+
+.dr-und {
+  text-decoration: underline;
+}
+
+.dr-default-theme-light {
+  background: #ffffff;
+}
+
+.dr-default-theme-dark {
+  background: #000000;
+}
+
 ul {
   list-style-type: disc;
   list-style-position: inside;
@@ -101,46 +117,152 @@ ol {
   list-style-position: inside;
 }
 
-ul, ol {
+dl > dt {
+  font-weight: 600;
+  font-size: 1.313rem;
+}
+
+dl > dd {
+  margin-left: 1.5rem;
+}
+
+ul, ol, dl {
   padding-left: 1rem;
-  margin: 1rem;
+  margin: 0.5rem;
+}
+
+a {
+  color: #0096FF;
+  text-decoration: underline;
+  transition: 0.5s ease-out;
+}
+
+@media (hover: hover) {
+  a:hover {
+    opacity: 0.75;
+  }
+}
+/* Table Styles */
+.dr-table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  /* Table Header */
+}
+.dr-table thead {
+  background-color: #000000;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.dr-table th {
+  padding: 0.5rem;
+  text-align: center;
+  font-weight: 700;
+}
+.dr-table tbody tr {
+  border-bottom: 1px solid #ddd;
+}
+.dr-table tbody tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+.dr-table td {
+  padding: 12px 16px;
+  text-align: center;
+}
+.dr-table td {
+  padding: 12px 16px;
+  text-align: center;
+}
+
+/* Form Styling */
+form {
+  max-width: 500px;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 1rem;
+}
+
+/* Labels */
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: black;
+}
+
+/* Radio and Checkbox Styling */
+.form-group-inline {
+  display: block;
+  gap: 15px;
+}
+
+/* Regular text for radio and checkbox labels */
+.form-group-inline label {
+  font-weight: normal;
+  display: inline-block;
+  margin-right: 15px;
+}
+
+/* Input Fields */
+input[type=text],
+input[type=email],
+input[type=password],
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background: #fff;
+}
+
+/* Placeholder Styling */
+input::placeholder,
+textarea::placeholder {
+  color: rgba(0, 0, 0, 0.5);
 }
 
 body {
   font-family: "Lexend", serif;
+  color: #000;
 }
 
-h1 {
+h1, .dr-h1 {
   font-size: 3.75rem;
   font-weight: 700;
 }
 
-h2 {
+h2, .dr-h2 {
   font-size: 3rem;
   font-weight: 700;
 }
 
-h3 {
+h3, .dr-h3 {
   font-size: 2.25rem;
   font-weight: 600;
 }
 
-h4 {
+h4, .dr-h4 {
   font-size: 1.5rem;
   font-weight: 600;
 }
 
-h5 {
+h5, .dr-h5 {
   font-size: 1rem;
   font-weight: 600;
 }
 
-h6 {
+h6, .dr-h6 {
   font-size: 0.875rem;
   font-weight: 600;
 }
 
-p {
+p, .dr-p {
   font-size: 1rem;
   font-weight: 400;
 }
@@ -169,6 +291,230 @@ p {
   font-weight: 900;
 }
 
+.dr-fs-xsm {
+  font-size: 0.875rem;
+}
+
+.dr-fs-sm {
+  font-size: 1rem;
+}
+
+.dr-fs-md {
+  font-size: 1.5rem;
+}
+
+.dr-fs-lg {
+  font-size: 2.25rem;
+}
+
+.dr-fs-xl {
+  font-size: 3rem;
+}
+
+.dr-fs-xxl {
+  font-size: 3.75rem;
+}
+
+.dr-ds-xsm {
+  font-size: 3rem;
+}
+
+.dr-ds-sm {
+  font-size: 3.75rem;
+}
+
+.dr-ds-md {
+  font-size: 4.5rem;
+}
+
+.dr-ds-lg {
+  font-size: 5.25rem;
+}
+
+.dr-ds-xl {
+  font-size: 6rem;
+}
+
+.dr-ds-xxl {
+  font-size: 6.75rem;
+}
+
+.dr-fc-primary {
+  color: #014c81;
+}
+
+.dr-fc-secondary {
+  color: #505050;
+}
+
+.dr-fc-success {
+  color: #0f993d;
+}
+
+.dr-fc-danger {
+  color: #970d0d;
+}
+
+.dr-fc-warning {
+  color: #956513;
+}
+
+.dr-fc-info {
+  color: #149e9a;
+}
+
+.dr-fc-light {
+  color: #d0d0d0;
+}
+
+.dr-fc-dark {
+  color: #000000;
+}
+
+.dr-default-theme-light {
+  color: #000;
+}
+.dr-default-theme-light .dr-fc-primary {
+  color: #0096FF;
+}
+.dr-default-theme-light .dr-fc-secondary {
+  color: #c2c2c2;
+}
+.dr-default-theme-light .dr-fc-success {
+  color: #15fc62;
+}
+.dr-default-theme-light .dr-fc-danger {
+  color: #ff1313;
+}
+.dr-default-theme-light .dr-fc-warning {
+  color: #ffab1b;
+}
+.dr-default-theme-light .dr-fc-info {
+  color: #1bfff7;
+}
+.dr-default-theme-light .dr-fc-light {
+  color: #ffffff;
+}
+.dr-default-theme-light .dr-fc-dark {
+  color: #000000;
+}
+
+.dr-default-theme-dark {
+  color: #ffffff;
+}
+.dr-default-theme-dark .dr-fc-primary {
+  color: #0096FF;
+}
+.dr-default-theme-dark .dr-fc-secondary {
+  color: #c2c2c2;
+}
+.dr-default-theme-dark .dr-fc-success {
+  color: #15fc62;
+}
+.dr-default-theme-dark .dr-fc-danger {
+  color: #ff1313;
+}
+.dr-default-theme-dark .dr-fc-warning {
+  color: #ffab1b;
+}
+.dr-default-theme-dark .dr-fc-info {
+  color: #1bfff7;
+}
+.dr-default-theme-dark .dr-fc-light {
+  color: #ffffff;
+}
+.dr-default-theme-dark .dr-fc-dark {
+  color: #000000;
+}
+
+@keyframes float {
+  0% {
+    scale: 100%;
+  }
+  50% {
+    scale: 120%;
+  }
+  100% {
+    scale: 110%;
+  }
+}
+@keyframes vfloat {
+  0% {
+    bottom: 0px;
+  }
+  50% {
+    bottom: 30px;
+  }
+  100% {
+    bottom: 0px;
+  }
+}
+@keyframes popout {
+  0% {
+    opacity: 0%;
+    translate: 0px 100px;
+  }
+  100% {
+    opacity: 100%;
+    translate: 0px 0px;
+  }
+}
+@keyframes scalein {
+  0% {
+    opacity: 0%;
+    scale: 1%;
+  }
+  100% {
+    opacity: 100%;
+    scale: 100%;
+  }
+}
+.dr-float:hover {
+  scale: 120%;
+  transition: 0.4s cubic-bezier(1, 2, 0, 1);
+}
+
+.dr-v-float:hover {
+  transition: 0.2s cubic-bezier(1, 2, 0, 1);
+  translate: 0 -5px;
+}
+
+main {
+  animation: popout 0.5s ease-out;
+}
+
+.dr-popout {
+  animation: popout 0.5s ease-out;
+}
+
+.dr-scalein {
+  animation: scalein 0.3s ease-in-out;
+}
+
+button {
+  transition: 0.3s ease-in;
+}
+
+.dr-static {
+  animation: unset;
+}
+
+.dr-anim-long {
+  animation-duration: 1s;
+}
+
+.dr-anim-quick {
+  animation-duration: 0.1s;
+}
+
+.f1preview:focus {
+  animation: scalein 0.3s ease-in-out;
+}
+
+.f2preview:focus {
+  animation: popout 0.5s ease-out;
+}
+
 /* Padding all around */
 .dr-p-n {
   padding: 0;
@@ -194,66 +540,80 @@ p {
   padding: 2rem;
 }
 
-.dr-p-pxxl {
+.dr-p-xxl {
   padding: 2.5rem;
 }
 
 /* Padding on x-axis */
 .dr-px-n {
-  padding: 0 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .dr-px-xsm {
-  padding: 0 0.25rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
 }
 
 .dr-px-sm {
-  padding: 0 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .dr-px-md {
-  padding: 0 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .dr-px-lg {
-  padding: 0 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .dr-px-xl {
-  padding: 0 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
-.dr-px-pxxl {
-  padding: 0 2.5rem;
+.dr-px-xxl {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 /* Padding on y-axis */
 .dr-py-n {
-  padding: 0 0;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .dr-py-xsm {
-  padding: 0.25rem 0;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
 .dr-py-sm {
-  padding: 0.5rem 0;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .dr-py-md {
-  padding: 1rem 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .dr-py-lg {
-  padding: 1.5rem 0;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .dr-py-xl {
-  padding: 2rem 0;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
-.dr-py-pxxl {
-  padding: 2.5rem 0;
+.dr-py-xxl {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 /* Padding on left side */
@@ -281,7 +641,7 @@ p {
   padding-left: 2rem;
 }
 
-.dr-pl-pxxl {
+.dr-pl-xxl {
   padding-left: 2.5rem;
 }
 
@@ -310,7 +670,7 @@ p {
   padding-right: 2rem;
 }
 
-.dr-pr-pxxl {
+.dr-pr-xxl {
   padding-right: 2.5rem;
 }
 
@@ -339,7 +699,7 @@ p {
   padding-top: 2rem;
 }
 
-.dr-pt-pxxl {
+.dr-pt-xxl {
   padding-top: 2.5rem;
 }
 
@@ -368,7 +728,7 @@ p {
   padding-bottom: 2rem;
 }
 
-.dr-pb-pxxl {
+.dr-pb-xxl {
   padding-bottom: 2.5rem;
 }
 
@@ -575,6 +935,192 @@ p {
   margin-bottom: 2.5rem;
 }
 
+.dr-br-n {
+  border-radius: 0;
+}
+
+.dr-br-xsm {
+  border-radius: 4px;
+}
+
+.dr-br-sm {
+  border-radius: 8px;
+}
+
+.dr-br-md {
+  border-radius: 12px;
+}
+
+.dr-br-lg {
+  border-radius: 16px;
+}
+
+.dr-br-xl {
+  border-radius: 20px;
+}
+
+.dr-br-xxl {
+  border-radius: 24px;
+}
+
+.dr-br-f {
+  border-radius: 100%;
+}
+
+.dr-b-n {
+  border: none;
+}
+
+.dr-b-xsm {
+  border: 1px solid black;
+}
+
+.dr-b-sm {
+  border: 2px solid black;
+}
+
+.dr-b-md {
+  border: 4px solid black;
+}
+
+.dr-b-lg {
+  border: 6px solid black;
+}
+
+.dr-b-xl {
+  border: 8px solid black;
+}
+
+.dr-b-xxl {
+  border: 10px solid black;
+}
+
+.dr-o-n {
+  opacity: 0;
+}
+
+.dr-o-he {
+  opacity: 0.25;
+}
+
+.dr-o-h {
+  opacity: 0.5;
+}
+
+.dr-o-hf {
+  opacity: 0.75;
+}
+
+.dr-o-f {
+  opacity: 1;
+}
+
+.dr-bg-primary {
+  background: #0096FF;
+  color: #000000;
+}
+
+.dr-bg-secondary {
+  background: #c2c2c2;
+  color: #000000;
+}
+
+.dr-bg-success {
+  background: #15fc62;
+  color: #000000;
+}
+
+.dr-bg-danger {
+  background: #ff1313;
+  color: #ffffff;
+}
+
+.dr-bg-warning {
+  background: #ffab1b;
+  color: #000000;
+}
+
+.dr-bg-info {
+  background: #1bfff7;
+  color: #000000;
+}
+
+.dr-bg-light {
+  background: #ffffff;
+  color: #000000;
+}
+
+.dr-bg-dark {
+  background: #000000;
+  color: #ffffff;
+}
+
+.dr-default-theme-light .dr-bg-primary {
+  background: #0096FF;
+  color: #000000;
+}
+.dr-default-theme-light .dr-bg-secondary {
+  background: #c2c2c2;
+  color: #000000;
+}
+.dr-default-theme-light .dr-bg-success {
+  background: #15fc62;
+  color: #000000;
+}
+.dr-default-theme-light .dr-bg-danger {
+  background: #ff1313;
+  color: #ffffff;
+}
+.dr-default-theme-light .dr-bg-warning {
+  background: #ffab1b;
+  color: #000000;
+}
+.dr-default-theme-light .dr-bg-info {
+  background: #1bfff7;
+  color: #000000;
+}
+.dr-default-theme-light .dr-bg-light {
+  background: #ffffff;
+  color: #000000;
+}
+.dr-default-theme-light .dr-bg-dark {
+  background: #000000;
+  color: #ffffff;
+}
+
+.dr-default-theme-dark .dr-bg-primary {
+  background: #0096FF;
+  color: #000000;
+}
+.dr-default-theme-dark .dr-bg-secondary {
+  background: #c2c2c2;
+  color: #000000;
+}
+.dr-default-theme-dark .dr-bg-success {
+  background: #15fc62;
+  color: #000000;
+}
+.dr-default-theme-dark .dr-bg-danger {
+  background: #ff1313;
+  color: #ffffff;
+}
+.dr-default-theme-dark .dr-bg-warning {
+  background: #ffab1b;
+  color: #000000;
+}
+.dr-default-theme-dark .dr-bg-info {
+  background: #1bfff7;
+  color: #000000;
+}
+.dr-default-theme-dark .dr-bg-light {
+  background: #ffffff;
+  color: #000000;
+}
+.dr-default-theme-dark .dr-bg-dark {
+  background: #000000;
+  color: #ffffff;
+}
+
 /* Containers */
 .dr-container-xsm {
   max-width: 36rem;
@@ -657,6 +1203,28 @@ p {
   justify-content: space-around;
 }
 
+/* Align Items */
+.dr-align-items-start {
+  align-items: start;
+}
+
+.dr-align-items-end {
+  align-items: end;
+}
+
+.dr-align-items-center {
+  align-items: center;
+}
+
+.dr-align-items-start {
+  align-items: stretch;
+}
+
+/* Grid Items */
+.dr-grid {
+  display: grid;
+}
+
 .dr-g-n {
   gap: 0;
 }
@@ -683,6 +1251,1078 @@ p {
 
 .dr-g-xxl {
   gap: 2.5rem;
+}
+
+.dr-g-n {
+  gap: 0;
+}
+
+.dr-g-xsm {
+  gap: 0.25rem;
+}
+
+.dr-g-sm {
+  gap: 0.5rem;
+}
+
+.dr-g-md {
+  gap: 1rem;
+}
+
+.dr-g-lg {
+  gap: 1.5rem;
+}
+
+.dr-g-xl {
+  gap: 2rem;
+}
+
+.dr-g-xxl {
+  gap: 2.5rem;
+}
+
+.dr-grid {
+  display: grid;
+}
+
+.dr-grid-cols-1 {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.dr-grid-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.dr-grid-cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.dr-grid-cols-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.dr-grid-cols-5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.dr-grid-cols-6 {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.dr-grid-cols-12 {
+  grid-template-columns: repeat(12, 1fr);
+}
+
+button.dr-btn,
+a.dr-btn {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.5s;
+  opacity: 1;
+  background: transparent;
+  color: #000;
+}
+
+a.dr-btn {
+  text-decoration: none;
+}
+
+button.dr-btn-tp,
+a.dr-btn-tp {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.5s;
+  opacity: 1;
+  background: transparent;
+  color: #000;
+  border: 1px solid #000;
+}
+
+button.dr-btn.dr-btn-primary,
+a.dr-btn.dr-btn-primary {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.5s;
+  opacity: 1;
+  background: #0096FF;
+  color: #000000;
+}
+
+@media (hover: hover) {
+  button.dr-btn.dr-btn-primary:hover,
+  a.dr-btn.dr-btn-primary:hover,
+  button.dr-btn-tp.dr-btn-primary:hover,
+  a.dr-btn-tp.dr-btn-primary:hover {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.5s;
+    opacity: 1;
+    background: #0376c8;
+    color: #000000;
+  }
+}
+button.dr-btn-tp.dr-btn-primary,
+a.dr-btn-tp.dr-btn-primary {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.5s;
+  opacity: 1;
+  background: transparent;
+  color: #014c81;
+  border: 1px solid #014c81;
+}
+
+button.dr-btn-primary:focus,
+a.dr-btn-primary:focus {
+  outline: 2px solid #0096FF;
+  outline-offset: 2px;
+}
+
+button.dr-btn.dr-btn-secondary,
+a.dr-btn.dr-btn-secondary {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.5s;
+  opacity: 1;
+  background: #c2c2c2;
+  color: #000000;
+}
+
+@media (hover: hover) {
+  button.dr-btn.dr-btn-secondary:hover,
+  a.dr-btn.dr-btn-secondary:hover,
+  button.dr-btn-tp.dr-btn-secondary:hover,
+  a.dr-btn-tp.dr-btn-secondary:hover {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.5s;
+    opacity: 1;
+    background: #858585;
+    color: #000000;
+  }
+}
+button.dr-btn-tp.dr-btn-secondary,
+a.dr-btn-tp.dr-btn-secondary {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.5s;
+  opacity: 1;
+  background: transparent;
+  color: #505050;
+  border: 1px solid #505050;
+}
+
+button.dr-btn-secondary:focus,
+a.dr-btn-secondary:focus {
+  outline: 2px solid #c2c2c2;
+  outline-offset: 2px;
+}
+
+button.dr-btn.dr-btn-success,
+a.dr-btn.dr-btn-success {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.5s;
+  opacity: 1;
+  background: #15fc62;
+  color: #000000;
+}
+
+@media (hover: hover) {
+  button.dr-btn.dr-btn-success:hover,
+  a.dr-btn.dr-btn-success:hover,
+  button.dr-btn-tp.dr-btn-success:hover,
+  a.dr-btn-tp.dr-btn-success:hover {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.5s;
+    opacity: 1;
+    background: #11b848;
+    color: #000000;
+  }
+}
+button.dr-btn-tp.dr-btn-success,
+a.dr-btn-tp.dr-btn-success {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.5s;
+  opacity: 1;
+  background: transparent;
+  color: #0f993d;
+  border: 1px solid #0f993d;
+}
+
+button.dr-btn-success:focus,
+a.dr-btn-success:focus {
+  outline: 2px solid #15fc62;
+  outline-offset: 2px;
+}
+
+button.dr-btn.dr-btn-danger,
+a.dr-btn.dr-btn-danger {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.5s;
+  opacity: 1;
+  background: #ff1313;
+  color: #ffffff;
+}
+
+@media (hover: hover) {
+  button.dr-btn.dr-btn-danger:hover,
+  a.dr-btn.dr-btn-danger:hover,
+  button.dr-btn-tp.dr-btn-danger:hover,
+  a.dr-btn-tp.dr-btn-danger:hover {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.5s;
+    opacity: 1;
+    background: #b10f0f;
+    color: #ffffff;
+  }
+}
+button.dr-btn-tp.dr-btn-danger,
+a.dr-btn-tp.dr-btn-danger {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.5s;
+  opacity: 1;
+  background: transparent;
+  color: #970d0d;
+  border: 1px solid #970d0d;
+}
+
+button.dr-btn-danger:focus,
+a.dr-btn-danger:focus {
+  outline: 2px solid #ff1313;
+  outline-offset: 2px;
+}
+
+button.dr-btn.dr-btn-warning,
+a.dr-btn.dr-btn-warning {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.5s;
+  opacity: 1;
+  background: #ffab1b;
+  color: #000000;
+}
+
+@media (hover: hover) {
+  button.dr-btn.dr-btn-warning:hover,
+  a.dr-btn.dr-btn-warning:hover,
+  button.dr-btn-tp.dr-btn-warning:hover,
+  a.dr-btn-tp.dr-btn-warning:hover {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.5s;
+    opacity: 1;
+    background: #cd8915;
+    color: #000000;
+  }
+}
+button.dr-btn-tp.dr-btn-warning,
+a.dr-btn-tp.dr-btn-warning {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.5s;
+  opacity: 1;
+  background: transparent;
+  color: #956513;
+  border: 1px solid #956513;
+}
+
+button.dr-btn-warning:focus,
+a.dr-btn-warning:focus {
+  outline: 2px solid #ffab1b;
+  outline-offset: 2px;
+}
+
+button.dr-btn.dr-btn-info,
+a.dr-btn.dr-btn-info {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.5s;
+  opacity: 1;
+  background: #1bfff7;
+  color: #000000;
+}
+
+@media (hover: hover) {
+  button.dr-btn.dr-btn-info:hover,
+  a.dr-btn.dr-btn-info:hover,
+  button.dr-btn-tp.dr-btn-info:hover,
+  a.dr-btn-tp.dr-btn-info:hover {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.5s;
+    opacity: 1;
+    background: #1ad2cb;
+    color: #000000;
+  }
+}
+button.dr-btn-tp.dr-btn-info,
+a.dr-btn-tp.dr-btn-info {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.5s;
+  opacity: 1;
+  background: transparent;
+  color: #149e9a;
+  border: 1px solid #149e9a;
+}
+
+button.dr-btn-info:focus,
+a.dr-btn-info:focus {
+  outline: 2px solid #1bfff7;
+  outline-offset: 2px;
+}
+
+button.dr-btn.dr-btn-light,
+a.dr-btn.dr-btn-light {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.5s;
+  opacity: 1;
+  background: #ffffff;
+  color: #000000;
+}
+
+@media (hover: hover) {
+  button.dr-btn.dr-btn-light:hover,
+  a.dr-btn.dr-btn-light:hover,
+  button.dr-btn-tp.dr-btn-light:hover,
+  a.dr-btn-tp.dr-btn-light:hover {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.5s;
+    opacity: 1;
+    background: #cecece;
+    color: #000000;
+  }
+}
+button.dr-btn-tp.dr-btn-light,
+a.dr-btn-tp.dr-btn-light {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.5s;
+  opacity: 1;
+  background: transparent;
+  color: #d0d0d0;
+  border: 1px solid #d0d0d0;
+}
+
+button.dr-btn-light:focus,
+a.dr-btn-light:focus {
+  outline: 2px solid #ffffff;
+  outline-offset: 2px;
+}
+
+button.dr-btn.dr-btn-dark,
+a.dr-btn.dr-btn-dark {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.5s;
+  opacity: 1;
+  background: #000000;
+  color: #ffffff;
+}
+
+@media (hover: hover) {
+  button.dr-btn.dr-btn-dark:hover,
+  a.dr-btn.dr-btn-dark:hover,
+  button.dr-btn-tp.dr-btn-dark:hover,
+  a.dr-btn-tp.dr-btn-dark:hover {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.5s;
+    opacity: 1;
+    background: #3c3c3c;
+    color: #ffffff;
+  }
+}
+button.dr-btn-tp.dr-btn-dark,
+a.dr-btn-tp.dr-btn-dark {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.5s;
+  opacity: 1;
+  background: transparent;
+  color: #000000;
+  border: 1px solid #000000;
+}
+
+button.dr-btn-dark:focus,
+a.dr-btn-dark:focus {
+  outline: 2px solid #000000;
+  outline-offset: 2px;
+}
+
+.dr-default-theme-light button.dr-btn.dr-btn-primary,
+.dr-default-theme-light a.dr-btn.dr-btn-primary {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.5s;
+  opacity: 1;
+  background: #0096FF;
+  color: #000000;
+}
+@media (hover: hover) {
+  .dr-default-theme-light button.dr-btn.dr-btn-primary:hover,
+  .dr-default-theme-light a.dr-btn.dr-btn-primary:hover,
+  .dr-default-theme-light button.dr-btn-tp.dr-btn-primary:hover,
+  .dr-default-theme-light a.dr-btn-tp.dr-btn-primary:hover {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.5s;
+    opacity: 1;
+    background: #0376c8;
+    color: #000000;
+  }
+}
+.dr-default-theme-light button.dr-btn-tp.dr-btn-primary,
+.dr-default-theme-light a.dr-btn-tp.dr-btn-primary {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.5s;
+  opacity: 1;
+  background: transparent;
+  color: #014c81;
+  border: 1px solid #014c81;
+}
+.dr-default-theme-light button.dr-btn-primary:focus,
+.dr-default-theme-light a.dr-btn-primary:focus {
+  outline: 1px solid #0096FF;
+  outline-offset: 2px;
+}
+.dr-default-theme-light button.dr-btn.dr-btn-secondary,
+.dr-default-theme-light a.dr-btn.dr-btn-secondary {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.5s;
+  opacity: 1;
+  background: #c2c2c2;
+  color: #000000;
+}
+@media (hover: hover) {
+  .dr-default-theme-light button.dr-btn.dr-btn-secondary:hover,
+  .dr-default-theme-light a.dr-btn.dr-btn-secondary:hover,
+  .dr-default-theme-light button.dr-btn-tp.dr-btn-secondary:hover,
+  .dr-default-theme-light a.dr-btn-tp.dr-btn-secondary:hover {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.5s;
+    opacity: 1;
+    background: #858585;
+    color: #000000;
+  }
+}
+.dr-default-theme-light button.dr-btn-tp.dr-btn-secondary,
+.dr-default-theme-light a.dr-btn-tp.dr-btn-secondary {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.5s;
+  opacity: 1;
+  background: transparent;
+  color: #505050;
+  border: 1px solid #505050;
+}
+.dr-default-theme-light button.dr-btn-secondary:focus,
+.dr-default-theme-light a.dr-btn-secondary:focus {
+  outline: 1px solid #c2c2c2;
+  outline-offset: 2px;
+}
+.dr-default-theme-light button.dr-btn.dr-btn-success,
+.dr-default-theme-light a.dr-btn.dr-btn-success {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.5s;
+  opacity: 1;
+  background: #15fc62;
+  color: #000000;
+}
+@media (hover: hover) {
+  .dr-default-theme-light button.dr-btn.dr-btn-success:hover,
+  .dr-default-theme-light a.dr-btn.dr-btn-success:hover,
+  .dr-default-theme-light button.dr-btn-tp.dr-btn-success:hover,
+  .dr-default-theme-light a.dr-btn-tp.dr-btn-success:hover {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.5s;
+    opacity: 1;
+    background: #11b848;
+    color: #000000;
+  }
+}
+.dr-default-theme-light button.dr-btn-tp.dr-btn-success,
+.dr-default-theme-light a.dr-btn-tp.dr-btn-success {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.5s;
+  opacity: 1;
+  background: transparent;
+  color: #0f993d;
+  border: 1px solid #0f993d;
+}
+.dr-default-theme-light button.dr-btn-success:focus,
+.dr-default-theme-light a.dr-btn-success:focus {
+  outline: 1px solid #15fc62;
+  outline-offset: 2px;
+}
+.dr-default-theme-light button.dr-btn.dr-btn-danger,
+.dr-default-theme-light a.dr-btn.dr-btn-danger {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.5s;
+  opacity: 1;
+  background: #ff1313;
+  color: #ffffff;
+}
+@media (hover: hover) {
+  .dr-default-theme-light button.dr-btn.dr-btn-danger:hover,
+  .dr-default-theme-light a.dr-btn.dr-btn-danger:hover,
+  .dr-default-theme-light button.dr-btn-tp.dr-btn-danger:hover,
+  .dr-default-theme-light a.dr-btn-tp.dr-btn-danger:hover {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.5s;
+    opacity: 1;
+    background: #b10f0f;
+    color: #ffffff;
+  }
+}
+.dr-default-theme-light button.dr-btn-tp.dr-btn-danger,
+.dr-default-theme-light a.dr-btn-tp.dr-btn-danger {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.5s;
+  opacity: 1;
+  background: transparent;
+  color: #970d0d;
+  border: 1px solid #970d0d;
+}
+.dr-default-theme-light button.dr-btn-danger:focus,
+.dr-default-theme-light a.dr-btn-danger:focus {
+  outline: 1px solid #ff1313;
+  outline-offset: 2px;
+}
+.dr-default-theme-light button.dr-btn.dr-btn-warning,
+.dr-default-theme-light a.dr-btn.dr-btn-warning {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.5s;
+  opacity: 1;
+  background: #ffab1b;
+  color: #000000;
+}
+@media (hover: hover) {
+  .dr-default-theme-light button.dr-btn.dr-btn-warning:hover,
+  .dr-default-theme-light a.dr-btn.dr-btn-warning:hover,
+  .dr-default-theme-light button.dr-btn-tp.dr-btn-warning:hover,
+  .dr-default-theme-light a.dr-btn-tp.dr-btn-warning:hover {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.5s;
+    opacity: 1;
+    background: #cd8915;
+    color: #000000;
+  }
+}
+.dr-default-theme-light button.dr-btn-tp.dr-btn-warning,
+.dr-default-theme-light a.dr-btn-tp.dr-btn-warning {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.5s;
+  opacity: 1;
+  background: transparent;
+  color: #956513;
+  border: 1px solid #956513;
+}
+.dr-default-theme-light button.dr-btn-warning:focus,
+.dr-default-theme-light a.dr-btn-warning:focus {
+  outline: 1px solid #ffab1b;
+  outline-offset: 2px;
+}
+.dr-default-theme-light button.dr-btn.dr-btn-info,
+.dr-default-theme-light a.dr-btn.dr-btn-info {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.5s;
+  opacity: 1;
+  background: #1bfff7;
+  color: #000000;
+}
+@media (hover: hover) {
+  .dr-default-theme-light button.dr-btn.dr-btn-info:hover,
+  .dr-default-theme-light a.dr-btn.dr-btn-info:hover,
+  .dr-default-theme-light button.dr-btn-tp.dr-btn-info:hover,
+  .dr-default-theme-light a.dr-btn-tp.dr-btn-info:hover {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.5s;
+    opacity: 1;
+    background: #1ad2cb;
+    color: #000000;
+  }
+}
+.dr-default-theme-light button.dr-btn-tp.dr-btn-info,
+.dr-default-theme-light a.dr-btn-tp.dr-btn-info {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.5s;
+  opacity: 1;
+  background: transparent;
+  color: #149e9a;
+  border: 1px solid #149e9a;
+}
+.dr-default-theme-light button.dr-btn-info:focus,
+.dr-default-theme-light a.dr-btn-info:focus {
+  outline: 1px solid #1bfff7;
+  outline-offset: 2px;
+}
+.dr-default-theme-light button.dr-btn.dr-btn-light,
+.dr-default-theme-light a.dr-btn.dr-btn-light {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.5s;
+  opacity: 1;
+  background: #ffffff;
+  color: #000000;
+}
+@media (hover: hover) {
+  .dr-default-theme-light button.dr-btn.dr-btn-light:hover,
+  .dr-default-theme-light a.dr-btn.dr-btn-light:hover,
+  .dr-default-theme-light button.dr-btn-tp.dr-btn-light:hover,
+  .dr-default-theme-light a.dr-btn-tp.dr-btn-light:hover {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.5s;
+    opacity: 1;
+    background: #cecece;
+    color: #000000;
+  }
+}
+.dr-default-theme-light button.dr-btn-tp.dr-btn-light,
+.dr-default-theme-light a.dr-btn-tp.dr-btn-light {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.5s;
+  opacity: 1;
+  background: transparent;
+  color: #d0d0d0;
+  border: 1px solid #d0d0d0;
+}
+.dr-default-theme-light button.dr-btn-light:focus,
+.dr-default-theme-light a.dr-btn-light:focus {
+  outline: 1px solid #ffffff;
+  outline-offset: 2px;
+}
+.dr-default-theme-light button.dr-btn.dr-btn-dark,
+.dr-default-theme-light a.dr-btn.dr-btn-dark {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.5s;
+  opacity: 1;
+  background: #000000;
+  color: #ffffff;
+}
+@media (hover: hover) {
+  .dr-default-theme-light button.dr-btn.dr-btn-dark:hover,
+  .dr-default-theme-light a.dr-btn.dr-btn-dark:hover,
+  .dr-default-theme-light button.dr-btn-tp.dr-btn-dark:hover,
+  .dr-default-theme-light a.dr-btn-tp.dr-btn-dark:hover {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.5s;
+    opacity: 1;
+    background: #3c3c3c;
+    color: #ffffff;
+  }
+}
+.dr-default-theme-light button.dr-btn-tp.dr-btn-dark,
+.dr-default-theme-light a.dr-btn-tp.dr-btn-dark {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.5s;
+  opacity: 1;
+  background: transparent;
+  color: #000000;
+  border: 1px solid #000000;
+}
+.dr-default-theme-light button.dr-btn-dark:focus,
+.dr-default-theme-light a.dr-btn-dark:focus {
+  outline: 1px solid #000000;
+  outline-offset: 2px;
+}
+.dr-default-theme-dark button.dr-btn.dr-btn-primary,
+.dr-default-theme-dark a.dr-btn.dr-btn-primary {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.5s;
+  opacity: 1;
+  background: #0096FF;
+  color: #000000;
+}
+@media (hover: hover) {
+  .dr-default-theme-dark button.dr-btn.dr-btn-primary:hover,
+  .dr-default-theme-dark a.dr-btn.dr-btn-primary:hover,
+  .dr-default-theme-dark button.dr-btn-tp.dr-btn-primary:hover,
+  .dr-default-theme-dark a.dr-btn-tp.dr-btn-primary:hover {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.5s;
+    opacity: 1;
+    background: #0376c8;
+    color: #000000;
+  }
+}
+.dr-default-theme-dark button.dr-btn-tp.dr-btn-primary,
+.dr-default-theme-dark a.dr-btn-tp.dr-btn-primary {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.5s;
+  opacity: 1;
+  background: transparent;
+  color: #0095ff;
+  border: 1px solid #0095ff;
+}
+.dr-default-theme-dark button.dr-btn-primary:focus,
+.dr-default-theme-dark a.dr-btn-primary:focus {
+  outline: 1px solid #0096FF;
+  outline-offset: 2px;
+}
+.dr-default-theme-dark button.dr-btn.dr-btn-secondary,
+.dr-default-theme-dark a.dr-btn.dr-btn-secondary {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.5s;
+  opacity: 1;
+  background: #c2c2c2;
+  color: #000000;
+}
+@media (hover: hover) {
+  .dr-default-theme-dark button.dr-btn.dr-btn-secondary:hover,
+  .dr-default-theme-dark a.dr-btn.dr-btn-secondary:hover,
+  .dr-default-theme-dark button.dr-btn-tp.dr-btn-secondary:hover,
+  .dr-default-theme-dark a.dr-btn-tp.dr-btn-secondary:hover {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.5s;
+    opacity: 1;
+    background: #858585;
+    color: #000000;
+  }
+}
+.dr-default-theme-dark button.dr-btn-tp.dr-btn-secondary,
+.dr-default-theme-dark a.dr-btn-tp.dr-btn-secondary {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.5s;
+  opacity: 1;
+  background: transparent;
+  color: #b3b3b3;
+  border: 1px solid #b3b3b3;
+}
+.dr-default-theme-dark button.dr-btn-secondary:focus,
+.dr-default-theme-dark a.dr-btn-secondary:focus {
+  outline: 1px solid #c2c2c2;
+  outline-offset: 2px;
+}
+.dr-default-theme-dark button.dr-btn.dr-btn-success,
+.dr-default-theme-dark a.dr-btn.dr-btn-success {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.5s;
+  opacity: 1;
+  background: #15fc62;
+  color: #000000;
+}
+@media (hover: hover) {
+  .dr-default-theme-dark button.dr-btn.dr-btn-success:hover,
+  .dr-default-theme-dark a.dr-btn.dr-btn-success:hover,
+  .dr-default-theme-dark button.dr-btn-tp.dr-btn-success:hover,
+  .dr-default-theme-dark a.dr-btn-tp.dr-btn-success:hover {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.5s;
+    opacity: 1;
+    background: #11b848;
+    color: #000000;
+  }
+}
+.dr-default-theme-dark button.dr-btn-tp.dr-btn-success,
+.dr-default-theme-dark a.dr-btn-tp.dr-btn-success {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.5s;
+  opacity: 1;
+  background: transparent;
+  color: #1cff68;
+  border: 1px solid #1cff68;
+}
+.dr-default-theme-dark button.dr-btn-success:focus,
+.dr-default-theme-dark a.dr-btn-success:focus {
+  outline: 1px solid #15fc62;
+  outline-offset: 2px;
+}
+.dr-default-theme-dark button.dr-btn.dr-btn-danger,
+.dr-default-theme-dark a.dr-btn.dr-btn-danger {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.5s;
+  opacity: 1;
+  background: #ff1313;
+  color: #ffffff;
+}
+@media (hover: hover) {
+  .dr-default-theme-dark button.dr-btn.dr-btn-danger:hover,
+  .dr-default-theme-dark a.dr-btn.dr-btn-danger:hover,
+  .dr-default-theme-dark button.dr-btn-tp.dr-btn-danger:hover,
+  .dr-default-theme-dark a.dr-btn-tp.dr-btn-danger:hover {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.5s;
+    opacity: 1;
+    background: #b10f0f;
+    color: #ffffff;
+  }
+}
+.dr-default-theme-dark button.dr-btn-tp.dr-btn-danger,
+.dr-default-theme-dark a.dr-btn-tp.dr-btn-danger {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.5s;
+  opacity: 1;
+  background: transparent;
+  color: #ff1515;
+  border: 1px solid #ff1515;
+}
+.dr-default-theme-dark button.dr-btn-danger:focus,
+.dr-default-theme-dark a.dr-btn-danger:focus {
+  outline: 1px solid #ff1313;
+  outline-offset: 2px;
+}
+.dr-default-theme-dark button.dr-btn.dr-btn-warning,
+.dr-default-theme-dark a.dr-btn.dr-btn-warning {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.5s;
+  opacity: 1;
+  background: #ffab1b;
+  color: #000000;
+}
+@media (hover: hover) {
+  .dr-default-theme-dark button.dr-btn.dr-btn-warning:hover,
+  .dr-default-theme-dark a.dr-btn.dr-btn-warning:hover,
+  .dr-default-theme-dark button.dr-btn-tp.dr-btn-warning:hover,
+  .dr-default-theme-dark a.dr-btn-tp.dr-btn-warning:hover {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.5s;
+    opacity: 1;
+    background: #cd8915;
+    color: #000000;
+  }
+}
+.dr-default-theme-dark button.dr-btn-tp.dr-btn-warning,
+.dr-default-theme-dark a.dr-btn-tp.dr-btn-warning {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.5s;
+  opacity: 1;
+  background: transparent;
+  color: #ffae22;
+  border: 1px solid #ffae22;
+}
+.dr-default-theme-dark button.dr-btn-warning:focus,
+.dr-default-theme-dark a.dr-btn-warning:focus {
+  outline: 1px solid #ffab1b;
+  outline-offset: 2px;
+}
+.dr-default-theme-dark button.dr-btn.dr-btn-info,
+.dr-default-theme-dark a.dr-btn.dr-btn-info {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.5s;
+  opacity: 1;
+  background: #1bfff7;
+  color: #000000;
+}
+@media (hover: hover) {
+  .dr-default-theme-dark button.dr-btn.dr-btn-info:hover,
+  .dr-default-theme-dark a.dr-btn.dr-btn-info:hover,
+  .dr-default-theme-dark button.dr-btn-tp.dr-btn-info:hover,
+  .dr-default-theme-dark a.dr-btn-tp.dr-btn-info:hover {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.5s;
+    opacity: 1;
+    background: #1ad2cb;
+    color: #000000;
+  }
+}
+.dr-default-theme-dark button.dr-btn-tp.dr-btn-info,
+.dr-default-theme-dark a.dr-btn-tp.dr-btn-info {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.5s;
+  opacity: 1;
+  background: transparent;
+  color: #1efdf5;
+  border: 1px solid #1efdf5;
+}
+.dr-default-theme-dark button.dr-btn-info:focus,
+.dr-default-theme-dark a.dr-btn-info:focus {
+  outline: 1px solid #1bfff7;
+  outline-offset: 2px;
+}
+.dr-default-theme-dark button.dr-btn.dr-btn-light,
+.dr-default-theme-dark a.dr-btn.dr-btn-light {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.5s;
+  opacity: 1;
+  background: #ffffff;
+  color: #000000;
+}
+@media (hover: hover) {
+  .dr-default-theme-dark button.dr-btn.dr-btn-light:hover,
+  .dr-default-theme-dark a.dr-btn.dr-btn-light:hover,
+  .dr-default-theme-dark button.dr-btn-tp.dr-btn-light:hover,
+  .dr-default-theme-dark a.dr-btn-tp.dr-btn-light:hover {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.5s;
+    opacity: 1;
+    background: #cecece;
+    color: #000000;
+  }
+}
+.dr-default-theme-dark button.dr-btn-tp.dr-btn-light,
+.dr-default-theme-dark a.dr-btn-tp.dr-btn-light {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.5s;
+  opacity: 1;
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+.dr-default-theme-dark button.dr-btn-light:focus,
+.dr-default-theme-dark a.dr-btn-light:focus {
+  outline: 1px solid #ffffff;
+  outline-offset: 2px;
+}
+.dr-default-theme-dark button.dr-btn.dr-btn-dark,
+.dr-default-theme-dark a.dr-btn.dr-btn-dark {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.5s;
+  opacity: 1;
+  background: #000000;
+  color: #ffffff;
+}
+@media (hover: hover) {
+  .dr-default-theme-dark button.dr-btn.dr-btn-dark:hover,
+  .dr-default-theme-dark a.dr-btn.dr-btn-dark:hover,
+  .dr-default-theme-dark button.dr-btn-tp.dr-btn-dark:hover,
+  .dr-default-theme-dark a.dr-btn-tp.dr-btn-dark:hover {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.5s;
+    opacity: 1;
+    background: #3c3c3c;
+    color: #ffffff;
+  }
+}
+.dr-default-theme-dark button.dr-btn-tp.dr-btn-dark,
+.dr-default-theme-dark a.dr-btn-tp.dr-btn-dark {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.5s;
+  opacity: 1;
+  background: transparent;
+  color: #000000;
+  border: 1px solid #000000;
+}
+.dr-default-theme-dark button.dr-btn-dark:focus,
+.dr-default-theme-dark a.dr-btn-dark:focus {
+  outline: 1px solid #000000;
+  outline-offset: 2px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,6 +1,115 @@
+// Colours
+$themes: (
+    "default-theme-light": (
+        "primary": (
+                "color": #0096FF,
+                "hover": #0376c8,
+                "text": #000000,
+                "link": #014c81
+        ),
+        "secondary": (
+                "color": #c2c2c2,
+                "hover": #858585,
+                "text": #000000,
+                "link": #505050
+        ),
+        "success": (
+                "color": #15fc62,
+                "hover": #11b848,
+                "text": #000000,
+                "link": #0f993d
+        ),
+        "danger": (
+                "color": #ff1313,
+                "hover": #b10f0f,
+                "text": #ffffff,
+                "link": #970d0d
+        ),
+        "warning": (
+            "color": #ffab1b,
+            "hover": #cd8915,
+            "text": #000000,
+            "link": #956513
+        ),
+        "info": (
+            "color": #1bfff7,
+            "hover": #1ad2cb,
+            "text": #000000,
+            "link": #149e9a
+        ),
+        "light": (
+            "color": #ffffff,
+            "hover": #cecece,
+            "text": #000000,
+            "link": #d0d0d0
+        ),
+        "dark": (
+            "color": #000000,
+            "hover": #3c3c3c,
+            "text": #ffffff,
+            "link": #000000
+        ),
+        "text-main": #000,
+        "main-bg": #ffffff
+    ),
+    "default-theme-dark": (
+        "primary": (
+                "color": #0096FF,
+                "hover": #0376c8,
+                "text": #000000,
+                "link": #0095ff
+        ),
+        "secondary": (
+                "color": #c2c2c2,
+                "hover": #858585,
+                "text": #000000,
+                "link": #b3b3b3
+        ),
+        "success": (
+                "color": #15fc62,
+                "hover": #11b848,
+                "text": #000000,
+                "link": #1cff68
+        ),
+        "danger": (
+                "color": #ff1313,
+                "hover": #b10f0f,
+                "text": #ffffff,
+                "link": #ff1515
+        ),
+        "warning": (
+            "color": #ffab1b,
+            "hover": #cd8915,
+            "text": #000000,
+            "link": #ffae22
+        ),
+        "info": (
+            "color": #1bfff7,
+            "hover": #1ad2cb,
+            "text": #000000,
+            "link": #1efdf5
+        ),
+        "light": (
+            "color": #ffffff,
+            "hover": #cecece,
+            "text": #000000,
+            "link": #ffffff
+        ),
+        "dark": (
+            "color": #000000,
+            "hover": #3c3c3c,
+            "text": #ffffff,
+            "link": #000000
+        ),
+        "text-main": #ffffff,
+        "main-bg": #000000
+    ),
+);
+
 // Fonts
 $dream-font: "Lexend", serif;
 
+// Font Sizes
 $font-sizes: (
     "xsm": 0.875rem,
     "sm": 1rem,
@@ -8,6 +117,16 @@ $font-sizes: (
     "lg": 2.25rem,
     "xl": 3rem,
     "xxl": 3.75rem
+);
+
+// Display Font Sizes
+$display-font-sizes: (
+    "xsm": 3rem,
+    "sm": 3.75rem,
+    "md": 4.5rem,
+    "lg": 5.25rem,
+    "xl": 6rem,
+    "xxl": 6.75rem
 );
 
 // Font Weights
@@ -28,7 +147,7 @@ $padding-sizes: (
     "md": 1rem,
     "lg": 1.5rem,
     "xl": 2rem,
-    "pxxl": 2.5rem
+    "xxl": 2.5rem
 );
 
 // Margins
@@ -66,11 +185,52 @@ $breakpoints: (
 // Rounded Corners
 $rounded-corners: (
     "n": 0,
-    "xsm": 0.25rem,
-    "sm": 0.5rem,
-    "md": 1rem,
-    "lg": 1.5rem,
-    "xl": 2rem,
-    "xxl": 2.5rem,
+    "xsm": 4px,
+    "sm": 8px,
+    "md": 12px,
+    "lg": 16px,
+    "xl": 20px,
+    "xxl": 24px,
     "f": 100%
+);
+
+// Border Sizes
+$border-width: (
+    "n": 0,
+    "xsm": 1px,
+    "sm": 2px,
+    "md": 4px,
+    "lg": 6px,
+    "xl": 8px,
+    "xxl": 10px
+);
+
+// Opacity
+$opacity: (
+    "n": 0,
+    "he": 0.25,
+    "h": 0.5,
+    "hf": 0.75,
+    "f": 1
+);
+
+// Transition Length
+$transition-length: (
+    "xsm": 0.3s,
+    "sm": 0.5s,
+    "md": 0.25s,
+    "lg": 0.5s,
+    "xl": 0.75s,
+    "xxl": 1s
+);
+
+// Grids
+$grid-columns: (
+    1: 1,
+    2: 2,
+    3: 3,
+    4: 4,
+    5: 5,
+    6: 6,
+    12: 12
 );

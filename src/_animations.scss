@@ -13,11 +13,49 @@
 }
 //it starts a little below and moves up and fades in
 @keyframes popout {
-    0%{opacity: 0%; translate: 0px, -100px;}
-    100%{opacity: 100%; translate: 0px, 0px;}
+    0%{opacity: 0%; translate: 0px 100px;}
+    100%{opacity: 100%; translate: 0px 0px;}
 }
 //same as the other one but with a scale in
 @keyframes scalein {
     0%{opacity: 0%; scale: 1%}
     100%{opacity: 100%; scale: 100%}
+}
+
+.dr-float:hover {
+    scale: 120%;
+    transition: 0.4s cubic-bezier(1, 2, 0, 1);
+}
+
+//vfloat, popout, scalein
+.dr-v-float:hover {
+    transition: 0.2s cubic-bezier(1, 2, 0, 1);
+    translate: 0 -5px;
+}
+main {
+    animation: popout 0.5s ease-out;
+}
+.dr-popout {
+    animation: popout 0.5s ease-out;
+}
+.dr-scalein {
+    animation: scalein 0.3s ease-in-out;
+}
+button {
+    transition: 0.3s ease-in;
+}
+.dr-static {
+    animation: unset;
+}
+.dr-anim-long {
+    animation-duration: 1s;
+}
+.dr-anim-quick {
+    animation-duration: 0.1s;
+}
+.f1preview:focus {
+    animation: scalein 0.3s ease-in-out;
+}
+.f2preview:focus {
+    animation: popout 0.5s ease-out;
 }

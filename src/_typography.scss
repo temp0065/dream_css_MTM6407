@@ -1,36 +1,38 @@
 @use "dream-body-font";
 @use "variables";
+@use "functions";
 @use "sass:map";
 
 // Sets base fonts
 body {
     font-family: variables.$dream-font;
+    color: map.get(map.get(variables.$themes, "default-theme-light"), "text-main");
 }
-h1 {
+h1, .dr-h1 {
     font-size: map.get(variables.$font-sizes, "xxl");
     font-weight: map.get(variables.$font-weights, "b");
 }
-h2 {
+h2, .dr-h2 {
     font-size: map.get(variables.$font-sizes, "xl");
     font-weight: map.get(variables.$font-weights, "b");
 }
-h3 {
+h3, .dr-h3 {
     font-size: map.get(variables.$font-sizes, "lg");
     font-weight: map.get(variables.$font-weights, "sb");
 }
-h4 {
+h4, .dr-h4 {
     font-size: map.get(variables.$font-sizes, "md");
     font-weight: map.get(variables.$font-weights, "sb");
 }
-h5 {
+h5, .dr-h5 {
     font-size: map.get(variables.$font-sizes, "sm");
     font-weight: map.get(variables.$font-weights, "sb");
 }
-h6 {
+h6, .dr-h6 {
     font-size: map.get(variables.$font-sizes, "xsm");
     font-weight: map.get(variables.$font-weights, "sb");
 }
-p {
+p, .dr-p {
     font-size: map.get(variables.$font-sizes, "sm");
     font-weight: map.get(variables.$font-weights, "r");
 }
@@ -41,3 +43,43 @@ p {
         font-weight: $weight;
     }
 } 
+
+// Font size classes
+@each $size, $fs in variables.$font-sizes {
+    .dr-fs-#{$size} {
+        font-size: $fs;
+    }
+}
+
+// Display size classes
+@each $size, $ds in variables.$display-font-sizes {
+    .dr-ds-#{$size} {
+        font-size: $ds;
+    }
+}
+
+// Sets font color
+// If no theme is specified
+// If no theme is specified
+@each $color, $values in map.get(variables.$themes, "default-theme-light") {
+    @if functions.is-map($values) {
+        .dr-fc-#{$color} {
+            color: map.get($values, "link");
+        }
+    }
+}
+
+// If theme is specified
+@each $theme-name, $theme-values in variables.$themes {
+    .dr-#{$theme-name} {
+        color: map.get($theme-values, "text-main");
+
+        @each $type, $color in $theme-values {
+            @if functions.is-map($color) {
+                .dr-fc-#{$type} {
+                    color: map.get($color, "color");
+                }
+            }
+        }
+    }
+}
