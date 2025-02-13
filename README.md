@@ -32,12 +32,12 @@ npm install dreamcss
 To use DreamCSS, simply include it in your project and apply its classes to your HTML elements. Be sure to refer to our frameworks website, for documentation on all of the usable classes.
 ### **Example: Button Styling**
 ```html
-<button class="dr-btn-success">Complete</button>
+<button type="button" class="dr-btn-success">Complete</button>
 ```
-### **Example: Animations**
+### **Example: Button Animation**
 DreamCSS also includes built-in animations to enhance user experience. You can use them like this:
 ```html
-<div class="dr-fadeIn">This element fades in!</div>
+<button type="button" class="dr-float">Floating Button</button>
 ```
 
 <br>
