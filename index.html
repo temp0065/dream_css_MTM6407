@@ -1,82 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <title>DreamCSS Example Page</title>
-</head>
-<body>
+  </head>
+  <body>
     <main>
-        <header class="dr-container-sm">
-            <h1 class="dr-mb-lg dr-mt-lg">Welcome to Dream CSS.</h1>
-            <p class="dr-my-xl">Dream CSS is a lightweight, modern CSS framework designed to provide a clean and responsive foundation for web development. It offers a minimalist approach with customizable components, intuitive styling, and seamless integration with any project. This framework was written and styled by Nathan Templeton, Dominic Corriveau, Alex Galsytan, and Matthew Montgomery, aiming to simplify front-end design while maintaining flexibility and performance.</p>
-        </header>
-        
-        <!-- HEADINGS & PARAGRAPHS -->
-        <div class="dr-container-md dr-mb-xxl">
-            <h4 class="dr-mb-md">Headings and Paragraphs:</h4>
-            <h1>h1</h1>
-            <h2>h2</h2>
-            <h3>h3</h3>
-            <h4>h4</h4>
-            <p>This is what a paragraph looks like using the dream css library.</p>
-        </div>
-        
-        <!-- LISTS -->
-        <div class="dr-container-sm dr-my-lg">
-            <h4>Unordered List:</h4>
-            <ul>
-                <li>Unordered list item</li>
-                <li>Unordered list item</li>
-                <li>Unordered list item</li>
-            </ul>
-            <h4>Ordered List:</h4>
-            <ol>
-                <li>Ordered list item</li>
-                <li>Ordered list item</li>
-                <li>Ordered list item</li>
-            </ol>
-        </div>
-        
-        <!-- BUTTONS -->
-        <div class="dr-container-sm dr-my-lg">
-            <h4>Buttons:</h4>
-            <button type="button">Button 1</button>
-            <button type="button">Button 2</button>
-            <button type="button">Button 3</button>
-        </div>
+      <!-- TITLE & DESCRIPTION -->
+      <header class="dr-ml-xxl">
+        <h1 class="dr-mb-lg dr-mt-lg">Welcome to Dream CSS.</h1>
+        <p class="dr-my-xl dr-container-sm">Dream CSS is a lightweight, modern CSS framework designed to provide a clean and responsive foundation for web development. It offers a minimalist approach with customizable components, intuitive styling, and seamless integration with any project. This framework was written and styled by Nathan Templeton, Dominic Corriveau, Alex Galsytan, and Matthew Montgomery, aiming to simplify front-end design while maintaining flexibility and performance.</p>
+      </header>
 
-        <!-- TABLE -->
-        <div class="dr-container-lg">
-            <h4 class="dr-mb-lg">Table:</h4>
-            <table class="dr-table">
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Age</th>
-                        <th>Country</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Matthew</td>
-                        <td>24</td>
-                        <td>Canada</td>
-                    </tr>
-                    <tr>
-                        <td>Nathan</td>
-                        <td>??</td>
-                        <td>Canada</td>
-                    </tr>
-                    <tr>
-                        <td>Alex</td>
-                        <td>??</td>
-                        <td>??</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+      <!-- HEADINGS & PARAGRAPHS -->
+      <section class="dr-ml-xxl">
+        <h4 class="dr-mt-xxl">Headings and Paragraphs:</h4>
+        <h1>h1</h1>
+        <h2>h2</h2>
+        <h3>h3</h3>
+        <h4 class="dr-mb-lg">h4</h4>
+        <p>This is what a paragraph looks like using the dream css library.</p>
+      </section>
+
+      <!-- LISTS -->
+      <section class="dr-ml-xxl dr-my-xxl">
+        <h4>Unordered List:</h4>
+        <ul>
+          <li>Unordered list item</li>
+          <li>Unordered list item</li>
+          <li>Unordered list item</li>
+        </ul>
+        <h4>Ordered List:</h4>
+        <ol>
+          <li>Ordered list item</li>
+          <li>Ordered list item</li>
+          <li>Ordered list item</li>
+        </ol>
+      </section>
+
+      <!-- BUTTONS -->
+      <section class="dr-ml-xxl">
+        <h4 class="dr-mb-md">Buttons:</h4>
+        <button type="button">Success</button>
+        <button type="button">Warning</button>
+        <button type="button">Danger</button>
+      </section>
+
+      <!-- TABLE -->
+      <section class="dr-ml-xxl dr-container-sm">
+        <h4 class="dr-my-xxl">Table:</h4>
+        <table class="dr-table dr-mb-lg">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Country</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Matthew</td>
+              <td>24</td>
+              <td>Canada</td>
+            </tr>
+            <tr>
+              <td>Nathan</td>
+              <td>??</td>
+              <td>??</td>
+            </tr>
+            <tr>
+              <td>Alex</td>
+              <td>??</td>
+              <td>??</td>
+            </tr>
+            <tr>
+              <td>Dominic</td>
+              <td>??</td>
+              <td>??</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- FORM -->
+      <section class="dr-ml-xxl dr-container-sm">
+        <h4 class="dr-my-xl">Form:</h4>
+        <form>
+          <!-- text fields -->
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password">
+          </div>
+          <!-- radio buttons -->
+          <div class="form-group">
+            <label>Gender</label>
+            <div class="form-group-inline">
+              <input type="radio" id="male" name="gender" value="male">
+              <label for="male">Male</label>
+              <input type="radio" id="female" name="gender" value="female">
+              <label for="female">Female</label>
+            </div>
+          </div>
+          <!-- checkboxes -->
+          <div class="form-group">
+            <label>Interests</label>
+            <div class="form-group-inline">
+              <input type="checkbox" id="coding" name="interests" value="coding">
+              <label for="coding">Coding</label>
+              <input type="checkbox" id="gaming" name="interests" value="gaming">
+              <label for="gaming">Gaming</label>
+              <input type="checkbox" id="sports" name="interests" value="sports">
+              <label for="sports">Sports</label>
+            </div>
+          </div>
+          <!-- submit button -->
+          <div class="form-group">
+            <button type="submit" class="submit-btn">SUBMIT</button>
+          </div>
+        </form>
+      </section>
     </main>
-</body>
+  </body>
 </html>
