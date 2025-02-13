@@ -59,13 +59,14 @@ $font-sizes: (
 );
 ```
 3. Compile the SCSS using the commands below (in a bash terminal), depending on your preference:
-```powershell
+```bash
 sass --watch src/main.scss css/style.css
 ```
 - If you are actively modifying styles
+
 <br>
-<br>
-```powershell
+
+```bash
 sass src/main.scss css/style.css
 ```
 - If you just want to compile once
